@@ -36,7 +36,7 @@ An initiative in South Korea that provides MPW (Multi-Project Wafer) services us
 |
 ├── 1_Parallel_IO (Reference design using parallel I/O (Not implemented in this version))
 |
-├── 2_Partitioned_IO (RTL-to-GDS for My Chip Service, including plots and verification)
+├── 2_Splited_IO (RTL-to-GDS for My Chip Service, including plots and verification)
 │   ├── 2_0_Top_NCO: Integrated NCO system comprising all three sub-circuits
 │   ├── 2_1_Phase_Acc: Sub-circuit 1 (Phase Accumulator)
 │   ├── 2_2_Cordic_Element: Sub-circuit 2 (CORDIC Processing Element)
