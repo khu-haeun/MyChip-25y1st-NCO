@@ -36,13 +36,13 @@ An initiative in South Korea that provides MPW (Multi-Project Wafer) services us
 |
 ├── 1_Parallel_IO (Reference design using parallel I/O (Not implemented in this version))
 |
-├── 2_Splited_IO (RTL-to-GDS for My Chip Service, including plots and verification)
+├── 2_Splited_IO (RTL-to-GDS with Open-Source Design Kit, including output plots and verification)
 │   ├── 2_0_Top_NCO: Integrated NCO system comprising all three sub-circuits
-│   ├── 2_1_Phase_Acc: Sub-circuit 1 (Phase Accumulator)
-│   ├── 2_2_Cordic_Element: Sub-circuit 2 (CORDIC Processing Element)
-│   ├── 2_3_Output_Terminal: Sub-circuit 3 (Output Terminal)
+│   ├── 2_1_Phase_Acc: Sub-circuit 1
+│   ├── 2_2_Cordic_Element: Sub-circuit 2
+│   ├── 2_3_Output_Terminal: Sub-circuit 3
 |
-└── 3_Application (System-level implementation and application cases)
+└── 3_Application (application cases)
     ├── 3_0_Generate_Sinusoid: Sinusoidal waveform generation
     ├── 3_1_QPSK_Communication_prototype: QPSK simulation for the prototype board
     └── 3_2_QPSK_Communication_pcb: QPSK simulation for the final PCB
