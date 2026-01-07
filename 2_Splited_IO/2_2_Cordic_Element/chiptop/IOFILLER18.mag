@@ -1,0 +1,35 @@
+magic
+tech scmos
+magscale 1 6
+timestamp 1569533753
+<< checkpaint >>
+rect -132 -120 492 5132
+<< nwell >>
+rect -12 4200 372 4571
+rect -12 2241 372 3839
+<< psubstratepdiff >>
+rect 6 4680 354 5012
+rect 6 0 354 1560
+<< nsubstratendiff >>
+rect 6 4220 354 4552
+rect 6 2258 354 3820
+<< metal1 >>
+rect 6 4680 354 5012
+rect 6 4220 354 4552
+rect 6 2258 354 3820
+rect 6 0 354 1560
+<< metal2 >>
+rect 6 4680 354 5012
+rect 6 4220 354 4552
+rect 6 2258 354 3820
+rect 6 0 354 1560
+<< metal3 >>
+rect 6 4680 354 5012
+rect 6 4220 354 4552
+rect 6 2258 354 3820
+rect 6 0 354 1560
+use IOFILLER10$1  IOFILLER10_0
+timestamp 1569533753
+transform 1 0 92 0 1 0
+box -7 0 207 5012
+<< end >>

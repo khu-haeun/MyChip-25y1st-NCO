@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1740693292">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="DDFS_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="DDFS_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="DDFS.vdi"/>
+  <File Type="BG-DRC" Name="DDFS.drc"/>
+  <File Type="BG-BGN" Name="DDFS.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="DDFS.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="DDFS.ltx"/>
+  <File Type="RBD_FILE" Name="DDFS.rbd"/>
+  <File Type="NPI_FILE" Name="DDFS.npi"/>
+  <File Type="RNPI_FILE" Name="DDFS.rnpi"/>
+  <File Type="CFI_FILE" Name="DDFS.cfi"/>
+  <File Type="RCFI_FILE" Name="DDFS.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="DDFS_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="DDFS_boot.pdi"/>
+  <File Type="PDI-FILE" Name="DDFS.pdi"/>
+  <File Type="BITSTR-MMI" Name="DDFS.mmi"/>
+  <File Type="BITSTR-BMM" Name="DDFS_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="DDFS.nky"/>
+  <File Type="BITSTR-RBT" Name="DDFS.rbt"/>
+  <File Type="BITSTR-MSK" Name="DDFS.msk"/>
+  <File Type="BG-BIN" Name="DDFS.bin"/>
+  <File Type="BG-BIT" Name="DDFS.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="DDFS_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="DDFS_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="DDFS_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DDFS_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DDFS_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DDFS_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DDFS_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DDFS_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="DDFS_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="DDFS_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="DDFS_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="DDFS_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="DDFS_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="DDFS_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DDFS_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="DDFS_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="DDFS_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="DDFS_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="DDFS_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="DDFS_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="DDFS_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="DDFS_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DDFS_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DDFS_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DDFS_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="DDFS_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="DDFS_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="DDFS_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DDFS_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="DDFS_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="DDFS_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="DDFS_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="DDFS_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="DDFS_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="DDFS_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DDFS_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="DDFS_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="DDFS_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DDFS_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="DDFS_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="DDFS_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DDFS_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="DDFS_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="DDFS_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="DDFS_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="DDFS_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="DDFS_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="DDFS_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="DDFS_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="DDFS_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="DDFS_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="DDFS.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="DDFS_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="DDFS_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="DDFS_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="DDFS_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="DDFS_reports.tcl"/>
+  <File Type="PA-TCL" Name="DDFS.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/synthesis/phase_accumulator_netlist_bb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/synthesis/phase_accumulator_netlist_bb.v"/>
+        <Attr Name="ImportTime" Val="1740686249"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/synthesis/DDFS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/synthesis/DDFS.v"/>
+        <Attr Name="ImportTime" Val="1740692781"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/synthesis/cordic_element_netlist_bb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/synthesis/cordic_element_netlist_bb.v"/>
+        <Attr Name="ImportTime" Val="1740686249"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/synthesis/output_terminal_netlist_bb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/synthesis/output_terminal_netlist_bb.v"/>
+        <Attr Name="ImportTime" Val="1740692545"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DDFS"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../FIR8/FIR8_PE/2_Splited_IO/emulation/Vivado/fir_pe.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1739284033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

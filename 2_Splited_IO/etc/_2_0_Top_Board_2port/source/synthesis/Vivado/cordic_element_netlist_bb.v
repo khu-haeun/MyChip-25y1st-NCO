@@ -1,0 +1,1 @@
+../../../2_2_Cordic_Element/synthesis/Vivado/cordic_element_netlist_bb.v

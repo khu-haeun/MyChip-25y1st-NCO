@@ -1,0 +1,2179 @@
+Qflow synthesis logfile created on Tue Nov 25 08:13:08 PM KST 2025
+Running yosys for verilog parsing and synthesis
+yosys  -s nco.ys
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.54+15 (git sha1 cd71f190c, clang++ 18.1.3 -fPIC -O3)
+
+-- Executing script file `nco.ys' --
+
+1. Executing Liberty frontend: /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Imported 39 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v
+Parsing Verilog input from `/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v' to AST representation.
+Generating RTLIL representation for module `\nco'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: cordic_element.v
+Parsing Verilog input from `cordic_element.v' to AST representation.
+Generating RTLIL representation for module `\cordic_element'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: output_terminal.v
+Parsing Verilog input from `output_terminal.v' to AST representation.
+Generating RTLIL representation for module `\output_terminal'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: phase_accumulator.v
+Parsing Verilog input from `phase_accumulator.v' to AST representation.
+Generating RTLIL representation for module `\phase_accumulator'.
+Successfully finished Verilog frontend.
+
+6. Executing SYNTH pass.
+
+6.1. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1.1. Analyzing design hierarchy..
+Top module:  \nco
+Used module:     \cordic_element
+Used module:     \output_terminal
+Used module:     \phase_accumulator
+Reprocessing module nco because instantiated module cordic_element has become available.
+Generating RTLIL representation for module `\nco'.
+
+6.1.2. Analyzing design hierarchy..
+Top module:  \nco
+Used module:     \cordic_element
+Used module:     \output_terminal
+Used module:     \phase_accumulator
+
+6.1.3. Analyzing design hierarchy..
+Top module:  \nco
+Used module:     \cordic_element
+Used module:     \output_terminal
+Used module:     \phase_accumulator
+Removed 0 unused modules.
+
+6.2. Executing PROC pass (convert processes to netlists).
+
+6.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$output_terminal.v:54$39 in module output_terminal.
+Marked 1 switch rules as full_case in process $proc$output_terminal.v:45$38 in module output_terminal.
+Marked 5 switch rules as full_case in process $proc$output_terminal.v:32$37 in module output_terminal.
+Marked 6 switch rules as full_case in process $proc$cordic_element.v:113$24 in module cordic_element.
+Marked 3 switch rules as full_case in process $proc$cordic_element.v:82$7 in module cordic_element.
+Removed 1 dead cases from process $proc$cordic_element.v:62$6 in module cordic_element.
+Marked 1 switch rules as full_case in process $proc$cordic_element.v:62$6 in module cordic_element.
+Marked 5 switch rules as full_case in process $proc$cordic_element.v:49$5 in module cordic_element.
+Marked 6 switch rules as full_case in process $proc$phase_accumulator.v:56$61 in module phase_accumulator.
+Marked 1 switch rules as full_case in process $proc$phase_accumulator.v:48$59 in module phase_accumulator.
+Marked 3 switch rules as full_case in process $proc$phase_accumulator.v:26$54 in module phase_accumulator.
+Marked 1 switch rules as full_case in process $proc$phase_accumulator.v:12$52 in module phase_accumulator.
+Removed a total of 1 dead cases.
+
+6.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 65 assignments to connections.
+
+6.2.4. Executing PROC_INIT pass (extract init attributes).
+
+6.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~41 debug messages>
+
+6.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+Creating decoders for process `\output_terminal.$proc$output_terminal.v:54$39'.
+     1/2: $0\Ycalc[11:0]
+     2/2: $0\Xcalc[11:0]
+Creating decoders for process `\output_terminal.$proc$output_terminal.v:45$38'.
+     1/1: $1\bias[11:0]
+Creating decoders for process `\output_terminal.$proc$output_terminal.v:32$37'.
+     1/12: $0\Yin0[1:0]
+     2/12: $0\Yin1[1:0]
+     3/12: $0\Yin2[1:0]
+     4/12: $0\Yin3[1:0]
+     5/12: $0\Yin4[1:0]
+     6/12: $0\Yin5[1:0]
+     7/12: $0\Xin0[1:0]
+     8/12: $0\Xin1[1:0]
+     9/12: $0\Xin2[1:0]
+    10/12: $0\Xin3[1:0]
+    11/12: $0\Xin4[1:0]
+    12/12: $0\Xin5[1:0]
+Creating decoders for process `\output_terminal.$proc$output_terminal.v:26$36'.
+     1/1: $0\ISreg[0:0]
+Creating decoders for process `\output_terminal.$proc$output_terminal.v:17$35'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:27$33'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:26$32'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:25$31'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:24$30'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:23$29'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:22$28'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:21$27'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:20$26'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:19$25'.
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:113$24'.
+     1/18: $6\A_[1:0]
+     2/18: $6\Y_[1:0]
+     3/18: $6\X_[1:0]
+     4/18: $5\A_[1:0]
+     5/18: $5\Y_[1:0]
+     6/18: $5\X_[1:0]
+     7/18: $4\A_[1:0]
+     8/18: $4\Y_[1:0]
+     9/18: $4\X_[1:0]
+    10/18: $3\A_[1:0]
+    11/18: $3\Y_[1:0]
+    12/18: $3\X_[1:0]
+    13/18: $2\A_[1:0]
+    14/18: $2\Y_[1:0]
+    15/18: $2\X_[1:0]
+    16/18: $1\A_[1:0]
+    17/18: $1\Y_[1:0]
+    18/18: $1\X_[1:0]
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:82$7'.
+     1/3: $0\Acalc[11:0]
+     2/3: $0\Ycalc[11:0]
+     3/3: $0\Xcalc[11:0]
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:62$6'.
+     1/1: $1\atan[11:0]
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:49$5'.
+     1/18: $0\Ain0[1:0]
+     2/18: $0\Ain1[1:0]
+     3/18: $0\Ain2[1:0]
+     4/18: $0\Ain3[1:0]
+     5/18: $0\Ain4[1:0]
+     6/18: $0\Ain5[1:0]
+     7/18: $0\Yin0[1:0]
+     8/18: $0\Yin1[1:0]
+     9/18: $0\Yin2[1:0]
+    10/18: $0\Yin3[1:0]
+    11/18: $0\Yin4[1:0]
+    12/18: $0\Yin5[1:0]
+    13/18: $0\Xin0[1:0]
+    14/18: $0\Xin1[1:0]
+    15/18: $0\Xin2[1:0]
+    16/18: $0\Xin3[1:0]
+    17/18: $0\Xin4[1:0]
+    18/18: $0\Xin5[1:0]
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:42$4'.
+     1/1: $0\ISout[0:0]
+Creating decoders for process `\cordic_element.$proc$cordic_element.v:33$3'.
+Creating decoders for process `\phase_accumulator.$proc$phase_accumulator.v:56$61'.
+     1/6: $6\Aout[1:0]
+     2/6: $5\Aout[1:0]
+     3/6: $4\Aout[1:0]
+     4/6: $3\Aout[1:0]
+     5/6: $2\Aout[1:0]
+     6/6: $1\Aout[1:0]
+Creating decoders for process `\phase_accumulator.$proc$phase_accumulator.v:48$59'.
+     1/1: $0\ISout[0:0]
+Creating decoders for process `\phase_accumulator.$proc$phase_accumulator.v:26$54'.
+     1/2: $0\Atmp[11:0]
+     2/2: $0\acc_reg[19:0]
+Creating decoders for process `\phase_accumulator.$proc$phase_accumulator.v:12$52'.
+     1/8: $0\RdyCtl[6:0] [6]
+     2/8: $0\RdyCtl[6:0] [5]
+     3/8: $0\RdyCtl[6:0] [4]
+     4/8: $0\RdyCtl[6:0] [3]
+     5/8: $0\RdyCtl[6:0] [2]
+     6/8: $0\RdyCtl[6:0] [1]
+     7/8: $0\RdyCtl[6:0] [0]
+     8/8: $1\i[31:0]
+
+6.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\nco.\x[1]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[2]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[3]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[4]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[5]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[6]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[7]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\x[8]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[1]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[2]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[3]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[4]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[5]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[6]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[7]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\y[8]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[0]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[1]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[2]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[3]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[4]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[5]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[6]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[7]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\a[8]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[0]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[1]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[2]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[3]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[4]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[5]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[6]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\nco.\stg[7]' from process `\nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+No latch inferred for signal `\output_terminal.\bias' from process `\output_terminal.$proc$output_terminal.v:45$38'.
+No latch inferred for signal `\cordic_element.\atan7' from process `\cordic_element.$proc$cordic_element.v:27$33'.
+No latch inferred for signal `\cordic_element.\atan6' from process `\cordic_element.$proc$cordic_element.v:26$32'.
+No latch inferred for signal `\cordic_element.\atan5' from process `\cordic_element.$proc$cordic_element.v:25$31'.
+No latch inferred for signal `\cordic_element.\atan4' from process `\cordic_element.$proc$cordic_element.v:24$30'.
+No latch inferred for signal `\cordic_element.\atan3' from process `\cordic_element.$proc$cordic_element.v:23$29'.
+No latch inferred for signal `\cordic_element.\atan2' from process `\cordic_element.$proc$cordic_element.v:22$28'.
+No latch inferred for signal `\cordic_element.\atan1' from process `\cordic_element.$proc$cordic_element.v:21$27'.
+No latch inferred for signal `\cordic_element.\atan0' from process `\cordic_element.$proc$cordic_element.v:20$26'.
+No latch inferred for signal `\cordic_element.\oneOverK' from process `\cordic_element.$proc$cordic_element.v:19$25'.
+No latch inferred for signal `\cordic_element.\X_' from process `\cordic_element.$proc$cordic_element.v:113$24'.
+No latch inferred for signal `\cordic_element.\Y_' from process `\cordic_element.$proc$cordic_element.v:113$24'.
+No latch inferred for signal `\cordic_element.\A_' from process `\cordic_element.$proc$cordic_element.v:113$24'.
+No latch inferred for signal `\cordic_element.\atan' from process `\cordic_element.$proc$cordic_element.v:62$6'.
+No latch inferred for signal `\phase_accumulator.\Aout' from process `\phase_accumulator.$proc$phase_accumulator.v:56$61'.
+
+6.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\output_terminal.\Xcalc' using process `\output_terminal.$proc$output_terminal.v:54$39'.
+  created $dff cell `$procdff$823' with positive edge clock.
+Creating register for signal `\output_terminal.\Ycalc' using process `\output_terminal.$proc$output_terminal.v:54$39'.
+  created $dff cell `$procdff$824' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin5' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$825' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin4' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$826' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin3' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$827' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin2' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$828' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin1' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$829' with positive edge clock.
+Creating register for signal `\output_terminal.\Xin0' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$830' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin5' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$831' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin4' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$832' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin3' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$833' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin2' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$834' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin1' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$835' with positive edge clock.
+Creating register for signal `\output_terminal.\Yin0' using process `\output_terminal.$proc$output_terminal.v:32$37'.
+  created $dff cell `$procdff$836' with positive edge clock.
+Creating register for signal `\output_terminal.\ISreg' using process `\output_terminal.$proc$output_terminal.v:26$36'.
+  created $dff cell `$procdff$837' with positive edge clock.
+Creating register for signal `\output_terminal.\i' using process `\output_terminal.$proc$output_terminal.v:17$35'.
+  created $dff cell `$procdff$838' with positive edge clock.
+Creating register for signal `\output_terminal.\LoadCtl' using process `\output_terminal.$proc$output_terminal.v:17$35'.
+  created $dff cell `$procdff$839' with positive edge clock.
+Creating register for signal `\cordic_element.\Xcalc' using process `\cordic_element.$proc$cordic_element.v:82$7'.
+  created $dff cell `$procdff$840' with positive edge clock.
+Creating register for signal `\cordic_element.\Ycalc' using process `\cordic_element.$proc$cordic_element.v:82$7'.
+  created $dff cell `$procdff$841' with positive edge clock.
+Creating register for signal `\cordic_element.\Acalc' using process `\cordic_element.$proc$cordic_element.v:82$7'.
+  created $dff cell `$procdff$842' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin5' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$843' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin4' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$844' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin3' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$845' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin2' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$846' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin1' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$847' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin0' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$848' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin5' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$849' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin4' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$850' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin3' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$851' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin2' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$852' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin1' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$853' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin0' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$854' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain5' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$855' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain4' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$856' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain3' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$857' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain2' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$858' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain1' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$859' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain0' using process `\cordic_element.$proc$cordic_element.v:49$5'.
+  created $dff cell `$procdff$860' with positive edge clock.
+Creating register for signal `\cordic_element.\ISout' using process `\cordic_element.$proc$cordic_element.v:42$4'.
+  created $dff cell `$procdff$861' with positive edge clock.
+Creating register for signal `\cordic_element.\i' using process `\cordic_element.$proc$cordic_element.v:33$3'.
+  created $dff cell `$procdff$862' with positive edge clock.
+Creating register for signal `\cordic_element.\LoadCtl' using process `\cordic_element.$proc$cordic_element.v:33$3'.
+  created $dff cell `$procdff$863' with positive edge clock.
+Creating register for signal `\phase_accumulator.\ISout' using process `\phase_accumulator.$proc$phase_accumulator.v:48$59'.
+  created $dff cell `$procdff$864' with positive edge clock.
+Creating register for signal `\phase_accumulator.\acc_reg' using process `\phase_accumulator.$proc$phase_accumulator.v:26$54'.
+  created $dff cell `$procdff$865' with positive edge clock.
+Creating register for signal `\phase_accumulator.\Atmp' using process `\phase_accumulator.$proc$phase_accumulator.v:26$54'.
+  created $dff cell `$procdff$866' with positive edge clock.
+Creating register for signal `\phase_accumulator.\i' using process `\phase_accumulator.$proc$phase_accumulator.v:12$52'.
+  created $dff cell `$procdff$867' with positive edge clock.
+Creating register for signal `\phase_accumulator.\RdyCtl' using process `\phase_accumulator.$proc$phase_accumulator.v:12$52'.
+  created $dff cell `$procdff$868' with positive edge clock.
+
+6.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `nco.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/source/nco.v:0$157'.
+Found and cleaned up 2 empty switches in `\output_terminal.$proc$output_terminal.v:54$39'.
+Removing empty process `output_terminal.$proc$output_terminal.v:54$39'.
+Found and cleaned up 1 empty switch in `\output_terminal.$proc$output_terminal.v:45$38'.
+Removing empty process `output_terminal.$proc$output_terminal.v:45$38'.
+Found and cleaned up 6 empty switches in `\output_terminal.$proc$output_terminal.v:32$37'.
+Removing empty process `output_terminal.$proc$output_terminal.v:32$37'.
+Found and cleaned up 1 empty switch in `\output_terminal.$proc$output_terminal.v:26$36'.
+Removing empty process `output_terminal.$proc$output_terminal.v:26$36'.
+Removing empty process `output_terminal.$proc$output_terminal.v:17$35'.
+Removing empty process `cordic_element.$proc$cordic_element.v:27$33'.
+Removing empty process `cordic_element.$proc$cordic_element.v:26$32'.
+Removing empty process `cordic_element.$proc$cordic_element.v:25$31'.
+Removing empty process `cordic_element.$proc$cordic_element.v:24$30'.
+Removing empty process `cordic_element.$proc$cordic_element.v:23$29'.
+Removing empty process `cordic_element.$proc$cordic_element.v:22$28'.
+Removing empty process `cordic_element.$proc$cordic_element.v:21$27'.
+Removing empty process `cordic_element.$proc$cordic_element.v:20$26'.
+Removing empty process `cordic_element.$proc$cordic_element.v:19$25'.
+Found and cleaned up 6 empty switches in `\cordic_element.$proc$cordic_element.v:113$24'.
+Removing empty process `cordic_element.$proc$cordic_element.v:113$24'.
+Found and cleaned up 4 empty switches in `\cordic_element.$proc$cordic_element.v:82$7'.
+Removing empty process `cordic_element.$proc$cordic_element.v:82$7'.
+Found and cleaned up 1 empty switch in `\cordic_element.$proc$cordic_element.v:62$6'.
+Removing empty process `cordic_element.$proc$cordic_element.v:62$6'.
+Found and cleaned up 6 empty switches in `\cordic_element.$proc$cordic_element.v:49$5'.
+Removing empty process `cordic_element.$proc$cordic_element.v:49$5'.
+Found and cleaned up 1 empty switch in `\cordic_element.$proc$cordic_element.v:42$4'.
+Removing empty process `cordic_element.$proc$cordic_element.v:42$4'.
+Removing empty process `cordic_element.$proc$cordic_element.v:33$3'.
+Found and cleaned up 6 empty switches in `\phase_accumulator.$proc$phase_accumulator.v:56$61'.
+Removing empty process `phase_accumulator.$proc$phase_accumulator.v:56$61'.
+Found and cleaned up 2 empty switches in `\phase_accumulator.$proc$phase_accumulator.v:48$59'.
+Removing empty process `phase_accumulator.$proc$phase_accumulator.v:48$59'.
+Found and cleaned up 4 empty switches in `\phase_accumulator.$proc$phase_accumulator.v:26$54'.
+Removing empty process `phase_accumulator.$proc$phase_accumulator.v:26$54'.
+Found and cleaned up 1 empty switch in `\phase_accumulator.$proc$phase_accumulator.v:12$52'.
+Removing empty process `phase_accumulator.$proc$phase_accumulator.v:12$52'.
+Cleaned up 41 empty switches.
+
+6.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module cordic_element.
+<suppressed ~10 debug messages>
+Optimizing module phase_accumulator.
+<suppressed ~10 debug messages>
+
+6.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module cordic_element.
+Optimizing module phase_accumulator.
+
+6.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 8 unused cells and 464 unused wires.
+<suppressed ~18 debug messages>
+
+6.5. Executing CHECK pass (checking for obvious problems).
+Checking module cordic_element...
+Checking module nco...
+Warning: Wire nco.\y[0] [1] is used but has no driver.
+Warning: Wire nco.\y[0] [0] is used but has no driver.
+Warning: Wire nco.\x[0] [1] is used but has no driver.
+Warning: Wire nco.\x[0] [0] is used but has no driver.
+Checking module output_terminal...
+Checking module phase_accumulator...
+Found and reported 4 problems.
+
+6.6. Executing OPT pass (performing simple optimizations).
+
+6.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 4 cells.
+
+6.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$301.
+    dead port 1/2 on $mux $procmux$304.
+    dead port 1/2 on $mux $procmux$307.
+    dead port 1/2 on $mux $procmux$310.
+    dead port 1/2 on $mux $procmux$313.
+    dead port 1/2 on $mux $procmux$319.
+    dead port 1/2 on $mux $procmux$322.
+    dead port 1/2 on $mux $procmux$325.
+    dead port 1/2 on $mux $procmux$328.
+    dead port 1/2 on $mux $procmux$331.
+    dead port 1/2 on $mux $procmux$337.
+    dead port 1/2 on $mux $procmux$340.
+    dead port 1/2 on $mux $procmux$343.
+    dead port 1/2 on $mux $procmux$346.
+    dead port 1/2 on $mux $procmux$349.
+    dead port 1/2 on $mux $procmux$355.
+    dead port 1/2 on $mux $procmux$358.
+    dead port 1/2 on $mux $procmux$361.
+    dead port 1/2 on $mux $procmux$364.
+    dead port 1/2 on $mux $procmux$370.
+    dead port 1/2 on $mux $procmux$373.
+    dead port 1/2 on $mux $procmux$376.
+    dead port 1/2 on $mux $procmux$379.
+    dead port 1/2 on $mux $procmux$385.
+    dead port 1/2 on $mux $procmux$388.
+    dead port 1/2 on $mux $procmux$391.
+    dead port 1/2 on $mux $procmux$394.
+    dead port 1/2 on $mux $procmux$400.
+    dead port 1/2 on $mux $procmux$403.
+    dead port 1/2 on $mux $procmux$406.
+    dead port 1/2 on $mux $procmux$412.
+    dead port 1/2 on $mux $procmux$415.
+    dead port 1/2 on $mux $procmux$418.
+    dead port 1/2 on $mux $procmux$424.
+    dead port 1/2 on $mux $procmux$427.
+    dead port 1/2 on $mux $procmux$430.
+    dead port 1/2 on $mux $procmux$436.
+    dead port 1/2 on $mux $procmux$439.
+    dead port 1/2 on $mux $procmux$445.
+    dead port 1/2 on $mux $procmux$448.
+    dead port 1/2 on $mux $procmux$454.
+    dead port 1/2 on $mux $procmux$457.
+    dead port 1/2 on $mux $procmux$463.
+    dead port 1/2 on $mux $procmux$469.
+    dead port 1/2 on $mux $procmux$475.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$719.
+    dead port 1/2 on $mux $procmux$722.
+    dead port 1/2 on $mux $procmux$725.
+    dead port 1/2 on $mux $procmux$728.
+    dead port 1/2 on $mux $procmux$731.
+    dead port 1/2 on $mux $procmux$737.
+    dead port 1/2 on $mux $procmux$740.
+    dead port 1/2 on $mux $procmux$743.
+    dead port 1/2 on $mux $procmux$746.
+    dead port 1/2 on $mux $procmux$752.
+    dead port 1/2 on $mux $procmux$755.
+    dead port 1/2 on $mux $procmux$758.
+    dead port 1/2 on $mux $procmux$764.
+    dead port 1/2 on $mux $procmux$767.
+    dead port 1/2 on $mux $procmux$773.
+Removed 60 multiplexer ports.
+<suppressed ~54 debug messages>
+
+6.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 1 cells.
+
+6.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 65 unused wires.
+<suppressed ~2 debug messages>
+
+6.6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~1 debug messages>
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~54 debug messages>
+
+6.6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+6.6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~54 debug messages>
+
+6.6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.6.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.6.23. Finished OPT passes. (There is nothing left to do.)
+
+6.7. Executing FSM pass (extract and optimize FSM).
+
+6.7.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+6.7.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+6.7.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.7.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+6.7.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+6.7.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+6.7.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6.8. Executing OPT pass (performing simple optimizations).
+
+6.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~54 debug messages>
+
+6.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$861 ($dff) from module cordic_element (D = \ISin, Q = \ISout).
+Adding EN signal on $procdff$860 ($dff) from module cordic_element (D = \Ain, Q = \Ain0).
+Adding EN signal on $procdff$859 ($dff) from module cordic_element (D = \Ain, Q = \Ain1).
+Adding EN signal on $procdff$858 ($dff) from module cordic_element (D = \Ain, Q = \Ain2).
+Adding EN signal on $procdff$857 ($dff) from module cordic_element (D = \Ain, Q = \Ain3).
+Adding EN signal on $procdff$856 ($dff) from module cordic_element (D = \Ain, Q = \Ain4).
+Adding EN signal on $procdff$855 ($dff) from module cordic_element (D = \Ain, Q = \Ain5).
+Adding EN signal on $procdff$854 ($dff) from module cordic_element (D = \Yin, Q = \Yin0).
+Adding EN signal on $procdff$853 ($dff) from module cordic_element (D = \Yin, Q = \Yin1).
+Adding EN signal on $procdff$852 ($dff) from module cordic_element (D = \Yin, Q = \Yin2).
+Adding EN signal on $procdff$851 ($dff) from module cordic_element (D = \Yin, Q = \Yin3).
+Adding EN signal on $procdff$850 ($dff) from module cordic_element (D = \Yin, Q = \Yin4).
+Adding EN signal on $procdff$849 ($dff) from module cordic_element (D = \Yin, Q = \Yin5).
+Adding EN signal on $procdff$848 ($dff) from module cordic_element (D = \Xin, Q = \Xin0).
+Adding EN signal on $procdff$847 ($dff) from module cordic_element (D = \Xin, Q = \Xin1).
+Adding EN signal on $procdff$846 ($dff) from module cordic_element (D = \Xin, Q = \Xin2).
+Adding EN signal on $procdff$845 ($dff) from module cordic_element (D = \Xin, Q = \Xin3).
+Adding EN signal on $procdff$844 ($dff) from module cordic_element (D = \Xin, Q = \Xin4).
+Adding EN signal on $procdff$843 ($dff) from module cordic_element (D = \Xin, Q = \Xin5).
+Adding EN signal on $procdff$842 ($dff) from module cordic_element (D = $procmux$487_Y, Q = \Acalc).
+Adding EN signal on $procdff$841 ($dff) from module cordic_element (D = $procmux$504_Y, Q = \Ycalc).
+Adding EN signal on $procdff$840 ($dff) from module cordic_element (D = $procmux$514_Y, Q = \Xcalc).
+Adding SRST signal on $auto$ff.cc:266:slice$1010 ($dffe) from module cordic_element (D = $procmux$512_Y, Q = \Xcalc, rval = 12'010011011010).
+Adding EN signal on $procdff$837 ($dff) from module output_terminal (D = \ISin, Q = \ISreg).
+Adding EN signal on $procdff$836 ($dff) from module output_terminal (D = \Yin, Q = \Yin0).
+Adding EN signal on $procdff$835 ($dff) from module output_terminal (D = \Yin, Q = \Yin1).
+Adding EN signal on $procdff$834 ($dff) from module output_terminal (D = \Yin, Q = \Yin2).
+Adding EN signal on $procdff$833 ($dff) from module output_terminal (D = \Yin, Q = \Yin3).
+Adding EN signal on $procdff$832 ($dff) from module output_terminal (D = \Yin, Q = \Yin4).
+Adding EN signal on $procdff$831 ($dff) from module output_terminal (D = \Yin, Q = \Yin5).
+Adding EN signal on $procdff$830 ($dff) from module output_terminal (D = \Xin, Q = \Xin0).
+Adding EN signal on $procdff$829 ($dff) from module output_terminal (D = \Xin, Q = \Xin1).
+Adding EN signal on $procdff$828 ($dff) from module output_terminal (D = \Xin, Q = \Xin2).
+Adding EN signal on $procdff$827 ($dff) from module output_terminal (D = \Xin, Q = \Xin3).
+Adding EN signal on $procdff$826 ($dff) from module output_terminal (D = \Xin, Q = \Xin4).
+Adding EN signal on $procdff$825 ($dff) from module output_terminal (D = \Xin, Q = \Xin5).
+Adding EN signal on $procdff$824 ($dff) from module output_terminal (D = $procmux$159_Y, Q = \Ycalc).
+Adding EN signal on $procdff$823 ($dff) from module output_terminal (D = $procmux$164_Y, Q = \Xcalc).
+Adding SRST signal on $procdff$868 ($dff) from module phase_accumulator (D = { \RdyCtl [5:0] \RdyCtl [6] }, Q = \RdyCtl, rval = 7'0100000).
+Adding SRST signal on $procdff$866 ($dff) from module phase_accumulator (D = $procmux$789_Y, Q = \Atmp, rval = 12'000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$1108 ($sdff) from module phase_accumulator (D = $procmux$787_Y, Q = \Atmp).
+Adding SRST signal on $procdff$865 ($dff) from module phase_accumulator (D = $procmux$794_Y, Q = \acc_reg, rval = 20'00000000000000000000).
+Adding EN signal on $auto$ff.cc:266:slice$1110 ($sdff) from module phase_accumulator (D = $add$phase_accumulator.v:34$56_Y, Q = \acc_reg).
+Adding EN signal on $procdff$864 ($dff) from module phase_accumulator (D = $procmux$779_Y, Q = \ISout).
+
+6.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 125 unused cells and 119 unused wires.
+<suppressed ~128 debug messages>
+
+6.8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+6.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~150 debug messages>
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+<suppressed ~90 debug messages>
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 80 cells.
+
+6.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 80 unused wires.
+<suppressed ~2 debug messages>
+
+6.8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.8.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+6.8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.8.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.8.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.8.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.8.23. Finished OPT passes. (There is nothing left to do.)
+
+6.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell cordic_element.$procmux$523_CMP0 ($eq).
+Removed top 1 bits (of 3) from port B of cell cordic_element.$procmux$524_CMP0 ($eq).
+Removed top 2 bits (of 3) from port B of cell cordic_element.$procmux$525_CMP0 ($eq).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$not$output_terminal.v:57$41 ($not).
+Removed top 31 bits (of 32) from port B of cell output_terminal.$add$output_terminal.v:57$42 ($add).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$add$output_terminal.v:57$43 ($add).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$add$output_terminal.v:57$43 ($add).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$not$output_terminal.v:58$45 ($not).
+Removed top 31 bits (of 32) from port B of cell output_terminal.$add$output_terminal.v:58$46 ($add).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$add$output_terminal.v:58$47 ($add).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$add$output_terminal.v:58$47 ($add).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$add$output_terminal.v:57$42 ($add).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$add$output_terminal.v:57$42 ($add).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$add$output_terminal.v:58$46 ($add).
+Removed top 20 bits (of 32) from port A of cell output_terminal.$add$output_terminal.v:58$46 ($add).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$not$output_terminal.v:57$41 ($not).
+Removed top 20 bits (of 32) from port Y of cell output_terminal.$not$output_terminal.v:58$45 ($not).
+Removed top 20 bits (of 32) from wire output_terminal.$add$output_terminal.v:57$42_Y.
+Removed top 20 bits (of 32) from wire output_terminal.$not$output_terminal.v:57$41_Y.
+Removed top 1 bits (of 2) from port B of cell phase_accumulator.$eq$phase_accumulator.v:37$57 ($eq).
+
+6.10. Executing PEEPOPT pass (run peephole optimizers).
+
+6.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+6.12. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module cordic_element:
+  creating $macc model for $add$cordic_element.v:105$23 ($add).
+  creating $macc model for $add$cordic_element.v:87$13 ($add).
+  creating $macc model for $add$cordic_element.v:91$16 ($add).
+  creating $macc model for $sub$cordic_element.v:100$21 ($sub).
+  creating $macc model for $sub$cordic_element.v:86$11 ($sub).
+  creating $macc model for $sub$cordic_element.v:92$18 ($sub).
+  creating $alu model for $macc $sub$cordic_element.v:92$18.
+  creating $alu model for $macc $sub$cordic_element.v:86$11.
+  creating $alu model for $macc $sub$cordic_element.v:100$21.
+  creating $alu model for $macc $add$cordic_element.v:91$16.
+  creating $alu model for $macc $add$cordic_element.v:87$13.
+  creating $alu model for $macc $add$cordic_element.v:105$23.
+  creating $alu cell for $add$cordic_element.v:105$23: $auto$alumacc.cc:495:replace_alu$1115
+  creating $alu cell for $add$cordic_element.v:87$13: $auto$alumacc.cc:495:replace_alu$1118
+  creating $alu cell for $add$cordic_element.v:91$16: $auto$alumacc.cc:495:replace_alu$1121
+  creating $alu cell for $sub$cordic_element.v:100$21: $auto$alumacc.cc:495:replace_alu$1124
+  creating $alu cell for $sub$cordic_element.v:86$11: $auto$alumacc.cc:495:replace_alu$1127
+  creating $alu cell for $sub$cordic_element.v:92$18: $auto$alumacc.cc:495:replace_alu$1130
+  created 6 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module nco:
+  created 0 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module output_terminal:
+  creating $macc model for $add$output_terminal.v:57$42 ($add).
+  creating $macc model for $add$output_terminal.v:57$43 ($add).
+  creating $macc model for $add$output_terminal.v:58$46 ($add).
+  creating $macc model for $add$output_terminal.v:58$47 ($add).
+  creating $macc model for $add$output_terminal.v:61$48 ($add).
+  creating $macc model for $add$output_terminal.v:62$49 ($add).
+  merging $macc model for $add$output_terminal.v:58$46 into $add$output_terminal.v:58$47.
+  merging $macc model for $add$output_terminal.v:57$42 into $add$output_terminal.v:57$43.
+  creating $alu model for $macc $add$output_terminal.v:58$47.
+  creating $alu model for $macc $add$output_terminal.v:61$48.
+  creating $alu model for $macc $add$output_terminal.v:57$43.
+  creating $alu model for $macc $add$output_terminal.v:62$49.
+  creating $alu cell for $add$output_terminal.v:62$49: $auto$alumacc.cc:495:replace_alu$1133
+  creating $alu cell for $add$output_terminal.v:57$43: $auto$alumacc.cc:495:replace_alu$1136
+  creating $alu cell for $add$output_terminal.v:61$48: $auto$alumacc.cc:495:replace_alu$1139
+  creating $alu cell for $add$output_terminal.v:58$47: $auto$alumacc.cc:495:replace_alu$1142
+  created 4 $alu and 0 $macc cells.
+Extracting $alu and $macc cells in module phase_accumulator:
+  creating $macc model for $add$phase_accumulator.v:34$56 ($add).
+  creating $alu model for $macc $add$phase_accumulator.v:34$56.
+  creating $alu cell for $add$phase_accumulator.v:34$56: $auto$alumacc.cc:495:replace_alu$1145
+  created 1 $alu and 0 $macc cells.
+
+6.13. Executing SHARE pass (SAT-based resource sharing).
+Found 2 cells in module cordic_element that may be considered for resource sharing.
+  Analyzing resource sharing options for $sshr$cordic_element.v:87$12 ($sshr):
+    Found 1 activation_patterns using ctrl signal $ne$cordic_element.v:84$8_Y.
+    Found 1 candidates: $sshr$cordic_element.v:86$10
+    Analyzing resource sharing with $sshr$cordic_element.v:86$10 ($sshr):
+      Cell is always active. Therefore no sharing is possible.
+
+6.14. Executing OPT pass (performing simple optimizations).
+
+6.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+6.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 2 unused cells and 2 unused wires.
+<suppressed ~3 debug messages>
+
+6.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~14 debug messages>
+
+6.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.14.16. Finished OPT passes. (There is nothing left to do.)
+
+6.15. Executing MEMORY pass.
+
+6.15.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+6.15.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+6.15.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+6.15.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+6.15.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+6.15.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.15.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+6.15.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+6.15.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.15.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+6.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.17. Executing OPT pass (performing simple optimizations).
+
+6.17.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~4 debug messages>
+Optimizing module nco.
+<suppressed ~4 debug messages>
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+<suppressed ~2 debug messages>
+
+6.17.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.17.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.17.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 1 unused cells and 6 unused wires.
+<suppressed ~3 debug messages>
+
+6.17.5. Finished fast OPT passes.
+
+6.18. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+6.19. Executing OPT pass (performing simple optimizations).
+
+6.19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.19.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+6.19.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+    Consolidated identical input bits for $mux cell $procmux$498:
+      Old ports: A=12'010011011010, B=12'101100100110, Y=$procmux$498_Y
+      New ports: A=2'10, B=2'01, Y=$procmux$498_Y [3:2]
+      New connections: { $procmux$498_Y [11:4] $procmux$498_Y [1:0] } = { $procmux$498_Y [2] $procmux$498_Y [3:2] $procmux$498_Y [2] $procmux$498_Y [3] $procmux$498_Y [3:2] $procmux$498_Y [3] 2'10 }
+    Consolidated identical input bits for $pmux cell $procmux$518:
+      Old ports: A=12'000111111111, B=84'000100101101000010011111000001010000000000101000000000010011000000001001000000000100, Y=\atan
+      New ports: A=9'111111111, B=63'100101101010011111001010000000101000000010011000001001000000100, Y=\atan [8:0]
+      New connections: \atan [11:9] = 3'000
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+    Consolidated identical input bits for $mux cell $procmux$169:
+      Old ports: A=12'000000000000, B=12'100000000000, Y=\bias
+      New ports: A=1'0, B=1'1, Y=\bias [11]
+      New connections: \bias [10:0] = 11'00000000000
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+    Consolidated identical input bits for $mux cell $procmux$784:
+      Old ports: A=\acc_reg [19:8], B={ 2'00 \acc_reg [17:8] }, Y=$procmux$784_Y
+      New ports: A=\acc_reg [19:18], B=2'00, Y=$procmux$784_Y [11:10]
+      New connections: $procmux$784_Y [9:0] = \acc_reg [17:8]
+  Optimizing cells in module \phase_accumulator.
+    Consolidated identical input bits for $mux cell $procmux$787:
+      Old ports: A=$procmux$784_Y, B={ 2'11 \acc_reg [17:8] }, Y=$procmux$787_Y
+      New ports: A=$procmux$784_Y [11:10], B=2'11, Y=$procmux$787_Y [11:10]
+      New connections: $procmux$787_Y [9:0] = \acc_reg [17:8]
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 5 changes.
+
+6.19.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.19.6. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $procmux$487 in front of them:
+        $auto$alumacc.cc:495:replace_alu$1115
+        $auto$alumacc.cc:495:replace_alu$1124
+
+    Found cells that share an operand and can be merged by moving the $mux $procmux$502 in front of them:
+        $auto$alumacc.cc:495:replace_alu$1130
+        $auto$alumacc.cc:495:replace_alu$1118
+
+    Found cells that share an operand and can be merged by moving the $mux $procmux$512 in front of them:
+        $auto$alumacc.cc:495:replace_alu$1121
+        $auto$alumacc.cc:495:replace_alu$1127
+
+6.19.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.19.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 18 unused wires.
+<suppressed ~1 debug messages>
+
+6.19.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~3 debug messages>
+Optimizing module nco.
+Optimizing module output_terminal.
+<suppressed ~3 debug messages>
+Optimizing module phase_accumulator.
+
+6.19.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.19.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+6.19.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.19.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.19.14. Executing OPT_SHARE pass.
+
+6.19.15. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:266:slice$1009 ($dffe) from module cordic_element (D = $procmux$502_Y [1:0], Q = \Ycalc [1:0], rval = 2'10).
+
+6.19.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+6.19.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.19.18. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.19.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+6.19.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+6.19.21. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+6.19.22. Executing OPT_SHARE pass.
+
+6.19.23. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.19.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+6.19.25. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+6.19.26. Finished OPT passes. (There is nothing left to do.)
+
+6.20. Executing TECHMAP pass (map to technology primitives).
+
+6.20.1. Executing Verilog-2005 frontend: /usr/local/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/local/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+6.20.2. Continuing TECHMAP pass.
+Using template $paramod$6fc37af1c109ae54e8aed83fcd995c12d378ce93\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010100 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$fc972a7a46956c1788f3cb5257b53c8f1df2d0cc\_90_alu for cells of type $alu.
+Using template $paramod$ee3d784672cdb1cb32d9a801a3af776716f16b74\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $dff.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000001 for cells of type $lcu.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using template $paramod$constmap:f9b6782ecb1cfaac3b994aacc84bde4649a18fa8$paramod$29d4a7a819467ae7cf2f32196c8b84ce04653660\_90_shift_ops_shr_shl_sshl_sshr for cells of type $sshr.
+Using template $paramod$ee1a6f885509cf323a6820ff1379ff6e5dc2e005\_90_alu for cells of type $alu.
+Running "alumacc" on wrapper $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=12:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=12:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=12:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $sdffce.
+Using template $paramod$54b5b56f4359a73f4e91ebc5405f79b059a0eeaf\_90_pmux for cells of type $pmux.
+Using template $paramod$ce6e0bffdb8605e70c2145339a50927e2d751e17\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+No more expansions possible.
+<suppressed ~1423 debug messages>
+
+6.21. Executing OPT pass (performing simple optimizations).
+
+6.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~385 debug messages>
+Optimizing module nco.
+Optimizing module output_terminal.
+<suppressed ~161 debug messages>
+Optimizing module phase_accumulator.
+<suppressed ~32 debug messages>
+
+6.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~78 debug messages>
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 28 cells.
+
+6.21.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 101 unused cells and 578 unused wires.
+<suppressed ~104 debug messages>
+
+6.21.5. Finished fast OPT passes.
+
+6.22. Executing ABC pass (technology mapping using ABC).
+
+6.22.1. Extracting gate netlist of module `\cordic_element' to `<abc-temp-dir>/input.blif'..
+Extracted 529 gates and 612 wires to a netlist network with 81 inputs and 48 outputs.
+
+6.22.1.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.22.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        5
+ABC RESULTS:            ANDNOT cells:       98
+ABC RESULTS:               MUX cells:      136
+ABC RESULTS:              NAND cells:       14
+ABC RESULTS:               NOR cells:       31
+ABC RESULTS:               NOT cells:       32
+ABC RESULTS:                OR cells:       63
+ABC RESULTS:             ORNOT cells:       21
+ABC RESULTS:              XNOR cells:       23
+ABC RESULTS:               XOR cells:       74
+ABC RESULTS:        internal signals:      483
+ABC RESULTS:           input signals:       81
+ABC RESULTS:          output signals:       48
+Removing temp directory.
+
+6.22.2. Extracting gate netlist of module `\nco' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+6.22.3. Extracting gate netlist of module `\output_terminal' to `<abc-temp-dir>/input.blif'..
+Extracted 134 gates and 191 wires to a netlist network with 57 inputs and 39 outputs.
+
+6.22.3.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.22.3.2. Re-integrating ABC results.
+ABC RESULTS:            ANDNOT cells:        9
+ABC RESULTS:               MUX cells:       34
+ABC RESULTS:               NOR cells:        3
+ABC RESULTS:               NOT cells:        1
+ABC RESULTS:                OR cells:       32
+ABC RESULTS:             ORNOT cells:        1
+ABC RESULTS:              XNOR cells:        2
+ABC RESULTS:               XOR cells:       24
+ABC RESULTS:        internal signals:       95
+ABC RESULTS:           input signals:       57
+ABC RESULTS:          output signals:       39
+Removing temp directory.
+
+6.22.4. Extracting gate netlist of module `\phase_accumulator' to `<abc-temp-dir>/input.blif'..
+Extracted 149 gates and 208 wires to a netlist network with 57 inputs and 25 outputs.
+
+6.22.4.1. Executing ABC.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+6.22.4.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:        9
+ABC RESULTS:            ANDNOT cells:       31
+ABC RESULTS:               MUX cells:       10
+ABC RESULTS:              NAND cells:       12
+ABC RESULTS:               NOR cells:       16
+ABC RESULTS:                OR cells:       26
+ABC RESULTS:             ORNOT cells:        2
+ABC RESULTS:              XNOR cells:       22
+ABC RESULTS:               XOR cells:       18
+ABC RESULTS:        internal signals:      126
+ABC RESULTS:           input signals:       57
+ABC RESULTS:          output signals:       25
+Removing temp directory.
+
+6.23. Executing OPT pass (performing simple optimizations).
+
+6.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~46 debug messages>
+Optimizing module nco.
+Optimizing module output_terminal.
+<suppressed ~22 debug messages>
+Optimizing module phase_accumulator.
+
+6.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+<suppressed ~9 debug messages>
+Removed a total of 6 cells.
+
+6.23.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.23.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+Removed 3 unused cells and 542 unused wires.
+<suppressed ~6 debug messages>
+
+6.23.5. Finished fast OPT passes.
+
+6.24. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `nco'. Setting top module to nco.
+
+6.24.1. Analyzing design hierarchy..
+Top module:  \nco
+Used module:     \cordic_element
+Used module:     \output_terminal
+Used module:     \phase_accumulator
+
+6.24.2. Analyzing design hierarchy..
+Top module:  \nco
+Used module:     \cordic_element
+Used module:     \output_terminal
+Used module:     \phase_accumulator
+Removed 0 unused modules.
+
+6.25. Printing statistics.
+
+=== cordic_element ===
+
+   Number of wires:                515
+   Number of wire bits:            781
+   Number of public wires:          50
+   Number of public wire bits:     261
+   Number of ports:                 12
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                572
+     $_ANDNOT_                      98
+     $_AND_                          5
+     $_DFFE_PP_                     59
+     $_DFF_P_                        7
+     $_MUX_                        136
+     $_NAND_                        12
+     $_NOR_                         31
+     $_NOT_                         30
+     $_ORNOT_                       21
+     $_OR_                          62
+     $_SDFFCE_PP0P_                  7
+     $_SDFFCE_PP1P_                  7
+     $_XNOR_                        23
+     $_XOR_                         74
+
+=== nco ===
+
+   Number of wires:                 44
+   Number of wire bits:            133
+   Number of public wires:          44
+   Number of public wire bits:     133
+   Number of ports:                  7
+   Number of port bits:             37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     cordic_element                  8
+     output_terminal                 1
+     phase_accumulator               1
+
+=== output_terminal ===
+
+   Number of wires:                121
+   Number of wire bits:            207
+   Number of public wires:          28
+   Number of public wire bits:     114
+   Number of ports:                  9
+   Number of port bits:             22
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                161
+     $_ANDNOT_                       9
+     $_DFFE_PP_                     49
+     $_DFF_P_                        7
+     $_MUX_                         34
+     $_NOR_                          3
+     $_ORNOT_                        1
+     $_OR_                          32
+     $_XNOR_                         2
+     $_XOR_                         24
+
+=== phase_accumulator ===
+
+   Number of wires:                133
+   Number of wire bits:            227
+   Number of public wires:           9
+   Number of public wire bits:      65
+   Number of ports:                  6
+   Number of port bits:             26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                183
+     $_ANDNOT_                      31
+     $_AND_                          8
+     $_DFFE_PP_                      1
+     $_MUX_                         10
+     $_NAND_                        12
+     $_NOR_                         16
+     $_ORNOT_                        2
+     $_OR_                          25
+     $_SDFFE_PN0P_                  31
+     $_SDFF_PN0_                     6
+     $_SDFF_PN1_                     1
+     $_XNOR_                        22
+     $_XOR_                         18
+
+=== design hierarchy ===
+
+   nco                               1
+     cordic_element                  8
+     output_terminal                 1
+     phase_accumulator               1
+
+   Number of wires:               4418
+   Number of wire bits:           6815
+   Number of public wires:         481
+   Number of public wire bits:    2400
+   Number of ports:                118
+   Number of port bits:            245
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4920
+     $_ANDNOT_                     824
+     $_AND_                         48
+     $_DFFE_PP_                    522
+     $_DFF_P_                       63
+     $_MUX_                       1132
+     $_NAND_                       108
+     $_NOR_                        267
+     $_NOT_                        240
+     $_ORNOT_                      171
+     $_OR_                         553
+     $_SDFFCE_PP0P_                 56
+     $_SDFFCE_PP1P_                 56
+     $_SDFFE_PN0P_                  31
+     $_SDFF_PN0_                     6
+     $_SDFF_PN1_                     1
+     $_XNOR_                       208
+     $_XOR_                        634
+
+6.26. Executing CHECK pass (checking for obvious problems).
+Checking module cordic_element...
+Checking module nco...
+Checking module output_terminal...
+Checking module phase_accumulator...
+Found and reported 0 problems.
+
+7. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell DFFNEGX1 (noninv, pins=3, area=864.00) is a direct match for cell type $_DFF_N_.
+  cell DFFPOSX1 (noninv, pins=3, area=864.00) is a direct match for cell type $_DFF_P_.
+  cell DFFSR (noninv, pins=5, area=1584.00) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    \DFFNEGX1 _DFF_N_ (.CLK( C), .D( D), .Q( Q));
+    \DFFPOSX1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    unmapped dff cell: $_DFF_PN0_
+    unmapped dff cell: $_DFF_PN1_
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    unmapped dff cell: $_DFFSR_NNN_
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \DFFSR _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .R( R), .S( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+7.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\cordic_element':
+  mapped 80 $_DFF_P_ cells to \DFFPOSX1 cells.
+Mapping DFF cells in module `\nco':
+Mapping DFF cells in module `\output_terminal':
+  mapped 56 $_DFF_P_ cells to \DFFPOSX1 cells.
+Mapping DFF cells in module `\phase_accumulator':
+  mapped 39 $_DFF_P_ cells to \DFFPOSX1 cells.
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \output_terminal..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \phase_accumulator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic_element.
+  Optimizing cells in module \nco.
+  Optimizing cells in module \output_terminal.
+  Optimizing cells in module \phase_accumulator.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+Finding identical cells in module `\nco'.
+Finding identical cells in module `\output_terminal'.
+Finding identical cells in module `\phase_accumulator'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Finding unused cells or wires in module \nco..
+Finding unused cells or wires in module \output_terminal..
+Finding unused cells or wires in module \phase_accumulator..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+Optimizing module nco.
+Optimizing module output_terminal.
+Optimizing module phase_accumulator.
+
+8.9. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing ABC pass (technology mapping using ABC).
+
+9.1. Extracting gate netlist of module `\cordic_element' to `<abc-temp-dir>/input.blif'..
+Extracted 579 gates and 671 wires to a netlist network with 90 inputs and 79 outputs.
+
+9.1.1. Executing ABC.
+Running ABC command: "/usr/local/share/qflow/bin/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped cell "FAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "HAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "PADINOUT".
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XNOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
+ABC: Library "etri05_stdcells" from "/usr/local/share/qflow/tech/etri050/etri05_stdcells.lib" has 24 cells (9 skipped: 4 seq; 1 tri-state; 4 no func; 6 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.51 MB. Time =     0.00 sec
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+9.1.2. Re-integrating ABC results.
+ABC RESULTS:            AND2X2 cells:       27
+ABC RESULTS:           AOI21X1 cells:       61
+ABC RESULTS:           AOI22X1 cells:       20
+ABC RESULTS:             INVX1 cells:      131
+ABC RESULTS:            MUX2X1 cells:       25
+ABC RESULTS:           NAND2X1 cells:      190
+ABC RESULTS:           NAND3X1 cells:       66
+ABC RESULTS:            NOR2X1 cells:       61
+ABC RESULTS:            NOR3X1 cells:        4
+ABC RESULTS:           OAI21X1 cells:      226
+ABC RESULTS:           OAI22X1 cells:        6
+ABC RESULTS:             OR2X2 cells:       27
+ABC RESULTS:        internal signals:      502
+ABC RESULTS:           input signals:       90
+ABC RESULTS:          output signals:       79
+Removing temp directory.
+
+9.2. Extracting gate netlist of module `\nco' to `<abc-temp-dir>/input.blif'..
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Don't call ABC as there is nothing to map.
+Removing temp directory.
+
+9.3. Extracting gate netlist of module `\output_terminal' to `<abc-temp-dir>/input.blif'..
+Extracted 154 gates and 217 wires to a netlist network with 63 inputs and 61 outputs.
+
+9.3.1. Executing ABC.
+Running ABC command: "/usr/local/share/qflow/bin/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped cell "FAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "HAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "PADINOUT".
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XNOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
+ABC: Library "etri05_stdcells" from "/usr/local/share/qflow/tech/etri050/etri05_stdcells.lib" has 24 cells (9 skipped: 4 seq; 1 tri-state; 4 no func; 6 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.51 MB. Time =     0.00 sec
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+9.3.2. Re-integrating ABC results.
+ABC RESULTS:            AND2X2 cells:        6
+ABC RESULTS:           AOI21X1 cells:        3
+ABC RESULTS:           AOI22X1 cells:        4
+ABC RESULTS:             INVX1 cells:       49
+ABC RESULTS:           NAND2X1 cells:       89
+ABC RESULTS:           NAND3X1 cells:       31
+ABC RESULTS:            NOR2X1 cells:       15
+ABC RESULTS:           OAI21X1 cells:       77
+ABC RESULTS:             OR2X2 cells:       10
+ABC RESULTS:        internal signals:       93
+ABC RESULTS:           input signals:       63
+ABC RESULTS:          output signals:       61
+Removing temp directory.
+
+9.4. Extracting gate netlist of module `\phase_accumulator' to `<abc-temp-dir>/input.blif'..
+Extracted 214 gates and 276 wires to a netlist network with 60 inputs and 41 outputs.
+
+9.4.1. Executing ABC.
+Running ABC command: "/usr/local/share/qflow/bin/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lib -w /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.00 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFNEGX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFPOSX1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "DFFSR".
+ABC: Scl_LibertyReadGenlib() skipped cell "FAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "HAX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "LATCH".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "PADINOUT".
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "TBUFX2" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XNOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "XOR2X1" due to dont_use attribute.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADFC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADNC" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADVDD" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "PADGND" without logic function.
+ABC: Library "etri05_stdcells" from "/usr/local/share/qflow/tech/etri050/etri05_stdcells.lib" has 24 cells (9 skipped: 4 seq; 1 tri-state; 4 no func; 6 dont_use).  Time =     0.00 sec
+ABC: Memory =    0.51 MB. Time =     0.00 sec
+ABC: + strash 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + ifraig 
+ABC: + retime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + map -M 1 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+9.4.2. Re-integrating ABC results.
+ABC RESULTS:            AND2X2 cells:       19
+ABC RESULTS:           AOI21X1 cells:       49
+ABC RESULTS:           AOI22X1 cells:        1
+ABC RESULTS:             INVX1 cells:       40
+ABC RESULTS:           NAND2X1 cells:       61
+ABC RESULTS:           NAND3X1 cells:        7
+ABC RESULTS:            NOR2X1 cells:       52
+ABC RESULTS:           OAI21X1 cells:       66
+ABC RESULTS:             OR2X2 cells:       18
+ABC RESULTS:        internal signals:      175
+ABC RESULTS:           input signals:       60
+ABC RESULTS:          output signals:       41
+Removing temp directory.
+
+10. Executing FLATTEN pass (flatten design).
+Deleting now unused module cordic_element.
+Deleting now unused module output_terminal.
+Deleting now unused module phase_accumulator.
+<suppressed ~10 debug messages>
+
+11. Executing SETUNDEF pass (replace undef values with defined constants).
+Removed 248 unused cells and 6191 unused wires.
+
+12. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Mapping port nco.Dout using BUFX2.
+Don't map input port nco.En: Missing option -inpad.
+Don't map input port nco.FCW: Missing option -inpad.
+Mapping port nco.Vld using BUFX2.
+Don't map input port nco.clk: Missing option -inpad.
+Don't map input port nco.selSign: Missing option -inpad.
+Don't map input port nco.selXY: Missing option -inpad.
+
+13. Executing OPT pass (performing simple optimizations).
+
+13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module nco.
+
+13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nco'.
+Removed a total of 0 cells.
+
+13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nco.
+Performed a total of 0 changes.
+
+13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nco'.
+Removed a total of 0 cells.
+
+13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nco..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module nco.
+
+13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \nco..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \nco.
+Performed a total of 0 changes.
+
+13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\nco'.
+Removed a total of 0 cells.
+
+13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \nco..
+
+13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module nco.
+
+13.16. Finished OPT passes. (There is nothing left to do.)
+
+14. Executing Verilog backend.
+
+14.1. Executing BMUXMAP pass.
+
+14.2. Executing DEMUXMAP pass.
+Dumping module `\nco'.
+
+15. Printing statistics.
+
+=== nco ===
+
+   Number of wires:               7235
+   Number of wire bits:           8001
+   Number of public wires:        7235
+   Number of public wire bits:    8001
+   Number of ports:                  7
+   Number of port bits:             37
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               7859
+     $scopeinfo                     10
+     AND2X2                        235
+     AOI21X1                       530
+     AOI22X1                       159
+     BUFX2                          13
+     DFFPOSX1                      706
+     INVX1                        1111
+     MUX2X1                        199
+     NAND2X1                      1606
+     NAND3X1                       563
+     NOR2X1                        531
+     NOR3X1                         32
+     OAI21X1                      1886
+     OAI22X1                        44
+     OR2X2                         234
+
+Warnings: 4 unique messages, 4 total
+End of script. Logfile hash: 4349448884, CPU: user 0.54s system 0.18s, MEM: 35.02 MB peak
+Yosys 0.54+15 (git sha1 cd71f190c, clang++ 18.1.3 -fPIC -O3)
+Time spent: 35% 2x abc (0 sec), 13% 26x opt_clean (0 sec), ...
+Running getpowerground to determine power and ground net names.
+getpowerground.tcl  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef
+Running vlogFanout
+vlogFanout -l 300 -c 75 -I nco_nofanout -s nullstring -p /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib -b BUFX2,CLKBUF1 -i A,A -o Y,Y nco_mapped.v nco_sized.v
+
+vlogFanout for qflow 1.4.100
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib Read:  Processed 6615 lines.
+Top internal fanout is 47 (load 1339.29) from node _1848_,
+driven by INVX1 with strength 166.776 (fF driven at latency 300)
+Top fanout load-to-strength ratio is 7.14187 (latency = 2142.56 ps)
+Top input node fanout is 706 (load 35249.9) from node clk.
+0 gates exceed specified minimum load.
+384 buffers were added.
+Warning 1: load of 183.127 is 1.11293 times greater than strongest gate NAND3X1
+This warning will only be repeated for larger overload ratios.  Warning count reflects
+the total number of overloaded nets.
+Warning 3: load of 188.82 is 1.14754 times greater than strongest gate NAND3X1
+Warning 4: load of 195.426 is 1.18425 times greater than strongest gate OAI21X1
+Warning 5: load of 260.902 is 1.3961 times greater than strongest gate NOR2X1
+Warning 7: load of 289.213 is 1.74457 times greater than strongest gate NAND2X1
+Warning 8: load of 366.468 is 1.96099 times greater than strongest gate NOR2X1
+Warning 10: load of 363.777 is 2.19435 times greater than strongest gate NAND2X1
+Warning 102: load of 1349.29 is 2.45435 times greater than strongest gate DFFPOSX1
+107 gates were changed.
+
+Gate counts by drive strength:
+
+	"1" gates	In: 7446    	Out: 7339    	-107
+	"2" gates	In: 787    	Out: 852    	+65
+
+166 gates exceed specified minimum load.
+8 buffers were added.
+0 gates were changed.
+
+Gate counts by drive strength:
+
+	"1" gates	In: 7454    	Out: 7347    	-107
+	"2" gates	In: 787    	Out: 852    	+65
+
+Number of gates changed: 8
+Running vlog2Verilog for antenna cell mapping.
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef 
+   -o nco.v nco_sized.v
+
+Generating RTL verilog and SPICE netlist file in directory
+	 /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/synthesis
+Files:
+   Verilog: /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/synthesis/nco.rtl.v
+   Verilog: /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/synthesis/nco.rtlnopwr.v
+   Verilog: /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/synthesis/nco.rtlbb.v
+   Spice:   /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/synthesis/nco.spc
+
+Running vlog2Verilog.
+vlog2Verilog -c -v vdd -g gnd  -l /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef 
+	-o nco.rtl.v
+   nco.v
+vlog2Verilog -c -p -v vdd -g gnd  -l /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef 
+	-o nco.rtlnopwr.v
+   nco.v
+/usr/local/share/qflow/bin/vlog2Verilog -c -p -b -n -v vdd -g gnd  -l /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef
+   -o nco.rtlbb.v
+Running vlog2Spice.
+vlog2Spice -i -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.sp -o nco.spc nco.rtl.v
+Running spi2xspice.py
+spi2xspice.py "/usr/local/share/qflow/tech/etri050/etri05_stdcells.lib" nco.spc nco.xspice
+
+Synthesis script ended on Tue Nov 25 08:13:09 PM KST 2025

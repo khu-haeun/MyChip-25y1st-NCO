@@ -1,0 +1,23 @@
+total 1220
+drwxr-xr-x 3 haeun haeun   4096 Oct 14 17:05 ./
+drwxr-xr-x 9 haeun haeun   4096 Oct 12 15:19 ../
+-rw-rw-r-- 1 haeun haeun      0 Oct 14 17:05 file.txt
+-rw-r--r-- 1 haeun haeun 107931 Oct 12 15:19 phase_accumulator_anno.v
+-rw-r--r-- 1 haeun haeun  24239 Oct 12 15:19 phase_accumulator.dly
+-rw-r--r-- 1 haeun haeun  37527 Oct 12 15:19 phase_accumulator_mapped.v
+-rw-r--r-- 1 haeun haeun      8 Oct 12 15:19 phase_accumulator_nofanout
+-rw-r--r-- 1 haeun haeun 107931 Oct 12 15:19 phase_accumulator_postroute.v
+-rw-r--r-- 1 haeun haeun     34 Oct 12 15:19 phase_accumulator_powerground
+-rw-r--r-- 1 haeun haeun 107981 Oct 12 15:19 phase_accumulator.rtlbb.v
+-rw-r--r-- 1 haeun haeun 107931 Oct 12 15:19 phase_accumulator.rtlnopwr.v
+-rw-r--r-- 1 haeun haeun 209174 Oct 12 15:19 phase_accumulator.rtl.v
+-rw-r--r-- 1 haeun haeun  46673 Oct 12 15:19 phase_accumulator.sdf
+-rw-r--r-- 1 haeun haeun  31526 Oct 12 15:19 phase_accumulator_sized.v
+-rw-r--r-- 1 haeun haeun 136026 Oct 12 15:19 phase_accumulator.spc
+-rw-r--r-- 1 haeun haeun 118648 Oct 12 15:19 phase_accumulator.spef
+-rw-r--r-- 1 haeun haeun  31535 Oct 12 15:19 phase_accumulator_synth.rtlbb.v
+-rw-r--r-- 1 haeun haeun  31485 Oct 12 15:19 phase_accumulator_synth.rtlnopwr.v
+-rw-r--r-- 1 haeun haeun  42828 Oct 12 15:19 phase_accumulator_synth.rtl.v
+-rw-r--r-- 1 haeun haeun  31485 Oct 12 15:19 phase_accumulator.v
+-rw-r--r-- 1 haeun haeun  21110 Oct 12 15:19 phase_accumulator.xspice
+drwxr-xr-x 2 haeun haeun   4096 Oct 12 15:19 Vivado/

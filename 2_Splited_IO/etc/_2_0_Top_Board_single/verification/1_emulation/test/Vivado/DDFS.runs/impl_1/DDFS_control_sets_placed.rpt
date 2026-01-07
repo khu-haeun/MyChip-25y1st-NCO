@@ -1,0 +1,191 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Fri Feb 28 06:55:16 2025
+| Host         : HaEun running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file DDFS_control_sets_placed.rpt
+| Design       : DDFS
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   113 |
+|    Minimum number of control sets                        |   113 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   452 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   113 |
+| >= 0 to < 4        |    40 |
+| >= 4 to < 6        |    12 |
+| >= 6 to < 8        |    50 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              64 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               7 |            7 |
+| Yes          | No                    | No                     |             591 |          189 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              46 |           36 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|      Clock Signal      |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_019_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_030_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_029_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_028_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_027_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_026_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_025_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_023_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_024_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_021_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_020_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_031_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_018_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_022_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_017_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_016_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_015_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_014_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_013_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_012_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_011_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_010_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_032_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_006_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_007_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_008_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            |                            | u_pa/_009_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[5]             |                            |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_044_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_043_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_042_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_041_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_040_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_039_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_038_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_037_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_036_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_035_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_034_                 |                1 |              1 |         1.00 |
+|  u_pa/_053_            | u_pa/RdyCtl[6]             | u_pa/_033_                 |                1 |              1 |         1.00 |
+|  u_ot/_054_            | u_ot/LoadCtl[0]            |                            |                2 |              4 |         2.00 |
+|  u_ot/_054_            | u_ot/_004_                 |                            |                2 |              4 |         2.00 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_023_      |                            |                1 |              4 |         4.00 |
+|  u_ot/_054_            | u_ot/_003_                 |                            |                1 |              4 |         4.00 |
+|  u_ot/_054_            | u_ot/_002_                 |                            |                2 |              4 |         2.00 |
+|  u_ot/_054_            | u_ot/_001_                 |                            |                1 |              4 |         4.00 |
+|  u_ot/_054_            | u_ot/_000_                 |                            |                1 |              4 |         4.00 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_024_      |                            |                1 |              4 |         4.00 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_026_      |                            |                3 |              4 |         1.33 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_025_      |                            |                1 |              4 |         4.00 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_084_[5]   |                            |                1 |              4 |         4.00 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/_027_      |                            |                3 |              5 |         1.67 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_026_      |                            |                2 |              6 |         3.00 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_025_      |                            |                2 |              6 |         3.00 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_027_      |                            |                1 |              6 |         6.00 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_023_      |                            |                2 |              6 |         3.00 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/_084_[5]   |                            |                2 |              6 |         3.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_023_      |                            |                1 |              6 |         6.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_023_      |                            |                2 |              6 |         3.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_026_      |                            |                3 |              6 |         2.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_027_      |                            |                2 |              6 |         3.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_025_      |                            |                1 |              6 |         6.00 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/_084_[5]   |                            |                2 |              6 |         3.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_027_      |                            |                2 |              6 |         3.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_026_      |                            |                3 |              6 |         2.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_023_      |                            |                1 |              6 |         6.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_084_[5]   |                            |                3 |              6 |         2.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_027_      |                            |                3 |              6 |         2.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_025_      |                            |                2 |              6 |         3.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_026_      |                            |                2 |              6 |         3.00 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/_084_[5]   |                            |                3 |              6 |         2.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_025_      |                            |                3 |              6 |         2.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_084_[5]   |                            |                2 |              6 |         3.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_023_      |                            |                2 |              6 |         3.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_027_      |                            |                2 |              6 |         3.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_084_[5]   |                            |                2 |              6 |         3.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_025_      |                            |                1 |              6 |         6.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_027_      |                            |                2 |              6 |         3.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_025_      |                            |                1 |              6 |         6.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_024_      |                            |                2 |              6 |         3.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_026_      |                            |                2 |              6 |         3.00 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/_023_      |                            |                2 |              6 |         3.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_084_[5]   |                            |                3 |              6 |         2.00 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/_026_      |                            |                2 |              6 |         3.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_027_      |                            |                2 |              6 |         3.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_025_      |                            |                2 |              6 |         3.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_024_      |                            |                3 |              6 |         2.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_026_      |                            |                2 |              6 |         3.00 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/_023_      |                            |                2 |              6 |         3.00 |
+|  genblk1[5].u_ce/_070_ |                            |                            |                2 |              7 |         3.50 |
+|  genblk1[2].u_ce/_070_ |                            |                            |                3 |              7 |         2.33 |
+|  genblk1[3].u_ce/_070_ |                            |                            |                2 |              7 |         3.50 |
+|  genblk1[0].u_ce/_070_ |                            |                            |                3 |              7 |         2.33 |
+|  genblk1[1].u_ce/_070_ |                            |                            |                3 |              7 |         2.33 |
+|  genblk1[7].u_ce/_070_ |                            |                            |                3 |              7 |         2.33 |
+|  genblk1[6].u_ce/_070_ |                            |                            |                2 |              7 |         3.50 |
+|  genblk1[4].u_ce/_070_ |                            |                            |                3 |              7 |         2.33 |
+|  u_ot/_054_            |                            |                            |                4 |              8 |         2.00 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/LoadCtl[6] | genblk1[0].u_ce/LoadCtl[6] |                4 |             14 |         3.50 |
+|  genblk1[0].u_ce/_070_ | genblk1[0].u_ce/LoadCtl[6] |                            |                7 |             23 |         3.29 |
+|  genblk1[7].u_ce/_070_ | genblk1[7].u_ce/LoadCtl[6] |                            |                6 |             25 |         4.17 |
+|  u_ot/_054_            | u_ot/LoadCtl[6]            |                            |               10 |             25 |         2.50 |
+|  genblk1[6].u_ce/_070_ | genblk1[6].u_ce/LoadCtl[6] |                            |               10 |             31 |         3.10 |
+|  genblk1[1].u_ce/_070_ | genblk1[1].u_ce/LoadCtl[6] |                            |               10 |             37 |         3.70 |
+|  genblk1[2].u_ce/_070_ | genblk1[2].u_ce/LoadCtl[6] |                            |               10 |             37 |         3.70 |
+|  genblk1[5].u_ce/_070_ | genblk1[5].u_ce/LoadCtl[6] |                            |               10 |             37 |         3.70 |
+|  genblk1[4].u_ce/_070_ | genblk1[4].u_ce/LoadCtl[6] |                            |               10 |             37 |         3.70 |
+|  genblk1[3].u_ce/_070_ | genblk1[3].u_ce/LoadCtl[6] |                            |               10 |             37 |         3.70 |
++------------------------+----------------------------+----------------------------+------------------+----------------+--------------+
+
+

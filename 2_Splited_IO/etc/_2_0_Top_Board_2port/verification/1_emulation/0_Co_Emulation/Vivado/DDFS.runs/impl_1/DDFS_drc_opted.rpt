@@ -1,0 +1,170 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Fri Feb 28 06:55:13 2025
+| Host         : HaEun running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_drc -file DDFS_drc_opted.rpt -pb DDFS_drc_opted.pb -rpx DDFS_drc_opted.rpx
+| Design       : DDFS
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: DDFS
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 25
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| REQP-1571 | Warning  | connects_D                                          | 24         |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+REQP-1571#1 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_334_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#2 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_335_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#3 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_336_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#4 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_337_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#5 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_338_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#6 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_339_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#7 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_340_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#8 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_341_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#9 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_342_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#10 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_343_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#11 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_344_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#12 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_345_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#13 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_346_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#14 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_347_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#15 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_348_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#16 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_349_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#17 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_350_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#18 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_351_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#19 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_352_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#20 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_353_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#21 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_354_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#22 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_355_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#23 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_356_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+REQP-1571#24 Warning
+connects_D  
+The FDRE cell genblk1[0].u_ce/_357_ has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+Related violations: <none>
+
+

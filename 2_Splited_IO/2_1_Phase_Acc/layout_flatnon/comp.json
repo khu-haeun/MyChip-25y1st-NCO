@@ -1,0 +1,348 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "D",
+        "CLK",
+        "Q",
+        "vdd",
+        "gnd"
+      ], [
+        "D",
+        "CLK",
+        "Q",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "D",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ], [
+        "A",
+        "Y",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "phase_accumulator",
+      "phase_accumulator"
+   ],
+   "devices": [
+       [
+         ["OAI21X1", 66],
+         ["INVX1", 38],
+         ["NAND2X1", 61],
+         ["DFFPOSX1", 39],
+         ["AOI21X1", 49],
+         ["AND2X2", 19],
+         ["NAND3X1", 7],
+         ["OR2X2", 18],
+         ["NOR2X1", 52],
+         ["BUFX2", 19],
+         ["AOI22X1", 1],
+         ["CLKBUF1", 6],
+         ["INVX2", 1],
+         ["INVX8", 1 ]
+       ], [
+         ["OAI21X1", 66 ],
+         ["INVX1", 38 ],
+         ["NAND2X1", 61 ],
+         ["DFFPOSX1", 39 ],
+         ["AOI21X1", 49 ],
+         ["AND2X2", 19 ],
+         ["NAND3X1", 7 ],
+         ["OR2X2", 18 ],
+         ["NOR2X1", 52 ],
+         ["BUFX2", 19 ],
+         ["AOI22X1", 1 ],
+         ["CLKBUF1", 6 ],
+         ["INVX2", 1 ],
+         ["INVX8", 1 ]
+       ]
+   ],
+   "nets": [
+    401,
+    401
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "ISout",
+        "Vld",
+        "Aout[1]",
+        "Aout[0]",
+        "FCW[7]",
+        "clk",
+        "FCW[1]",
+        "FCW[0]",
+        "FCW[18]",
+        "FCW[6]",
+        "FCW[17]",
+        "FCW[12]",
+        "FCW[8]",
+        "FCW[19]",
+        "FCW[15]",
+        "FCW[11]",
+        "FCW[4]",
+        "FCW[3]",
+        "FCW[5]",
+        "FCW[2]",
+        "FCW[16]",
+        "En",
+        "FCW[14]",
+        "FCW[10]",
+        "FCW[13]",
+        "FCW[9]",
+        "gnd",
+        "vdd"
+      ], [
+        "ISout",
+        "Vld",
+        "Aout[1]",
+        "Aout[0]",
+        "FCW[7]",
+        "clk",
+        "FCW[1]",
+        "FCW[0]",
+        "FCW[18]",
+        "FCW[6]",
+        "FCW[17]",
+        "FCW[12]",
+        "FCW[8]",
+        "FCW[19]",
+        "FCW[15]",
+        "FCW[11]",
+        "FCW[4]",
+        "FCW[3]",
+        "FCW[5]",
+        "FCW[2]",
+        "FCW[16]",
+        "En",
+        "FCW[14]",
+        "FCW[10]",
+        "FCW[13]",
+        "FCW[9]",
+        "gnd",
+        "vdd"
+      ]
+   ]
+  }
+]

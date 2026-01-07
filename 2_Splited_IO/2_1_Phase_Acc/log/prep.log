@@ -1,0 +1,12 @@
+Qflow project preparation output log Thu Feb 27 19:36:43 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050
+Regenerating files for existing project phase_accumulator
+
+No actions specified on command line;
+creating qflow script file ~/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_1_Phase_Acc/qflow_exec.sh only.
+Uncomment lines in this file and source the file to run the flow.

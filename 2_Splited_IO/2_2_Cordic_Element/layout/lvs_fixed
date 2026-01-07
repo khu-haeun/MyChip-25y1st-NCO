@@ -1,0 +1,1 @@
+netgen -noc lvs "../synthesis/cordic_element.spc cordic_element" "cordic_element_Fixed.spice cordic_element_Fixed" ../../../../../../../tech/etri050_setup.tcl

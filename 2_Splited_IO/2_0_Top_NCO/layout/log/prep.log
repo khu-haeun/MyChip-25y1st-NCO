@@ -1,0 +1,12 @@
+Qflow project preparation output log Tue Nov 25 20:13:04 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050
+Regenerating files for existing project nco
+
+No actions specified on command line;
+creating qflow script file ~/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/top_layout/qflow_exec.sh only.
+Uncomment lines in this file and source the file to run the flow.

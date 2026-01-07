@@ -1,0 +1,32 @@
+padgroup Input_Cin permute
+twpin_Xin[1]    nonfixed
+twpin_Xin[0]    nonfixed
+twpin_Yin[1]    nonfixed
+twpin_Yin[0]    nonfixed
+twpin_Stg[2]    nonfixed
+twpin_Stg[1]    nonfixed
+twpin_Stg[0]    nonfixed
+restrict side B
+
+padgroup Input_Xin permute
+twpin_clk	    nonfixed
+twpin_Rdy    	nonfixed
+twpin_Ain[0]    nonfixed
+twpin_Ain[1]    nonfixed
+twpin_ISin    nonfixed
+restrict side L
+
+padgroup Input_Yin permute
+twpin_Xout[1]    nonfixed
+twpin_Xout[0]    nonfixed
+twpin_Yout[1]    nonfixed
+twpin_Yout[0]    nonfixed
+restrict side R
+
+padgroup Output_XYout permute
+twpin_Aout[1]    nonfixed
+twpin_Aout[0]    nonfixed
+twpin_ISout    nonfixed
+twpin_Vld    nonfixed
+restrict side T
+

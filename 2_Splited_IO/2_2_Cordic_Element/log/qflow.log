@@ -1,0 +1,1103 @@
+Starting new log file Fri Nov 28 15:02:36 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project cordic_element
+Running yosys for verilog parsing and synthesis
+yosys  -s cordic_element.ys
+
+/----------------------------------------------------------------------------\
+|  yosys -- Yosys Open SYnthesis Suite                                       |
+|  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+|  Distributed under an ISC-like license, type "license" to see terms        |
+\----------------------------------------------------------------------------/
+Yosys 0.54+15 (git sha1 cd71f190c, clang++ 18.1.3 -fPIC -O3)
+
+-- Executing script file `cordic_element.ys' --
+
+1. Executing Liberty frontend: /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Imported 39 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v
+Parsing Verilog input from `/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v' to AST representation.
+Generating RTLIL representation for module `\cordic_element'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \cordic_element
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \cordic_element
+Removed 0 unused modules.
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 6 switch rules as full_case in process $proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23 in module cordic_element.
+Marked 3 switch rules as full_case in process $proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6 in module cordic_element.
+Removed 1 dead cases from process $proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5 in module cordic_element.
+Marked 1 switch rules as full_case in process $proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5 in module cordic_element.
+Marked 5 switch rules as full_case in process $proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4 in module cordic_element.
+Removed a total of 1 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 21 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~18 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:27$32'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:26$31'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:25$30'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:24$29'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:23$28'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:22$27'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:21$26'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:20$25'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:19$24'.
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+1/18: $6\A_[1:0]
+2/18: $6\Y_[1:0]
+3/18: $6\X_[1:0]
+4/18: $5\A_[1:0]
+5/18: $5\Y_[1:0]
+6/18: $5\X_[1:0]
+7/18: $4\A_[1:0]
+8/18: $4\Y_[1:0]
+9/18: $4\X_[1:0]
+10/18: $3\A_[1:0]
+11/18: $3\Y_[1:0]
+12/18: $3\X_[1:0]
+13/18: $2\A_[1:0]
+14/18: $2\Y_[1:0]
+15/18: $2\X_[1:0]
+16/18: $1\A_[1:0]
+17/18: $1\Y_[1:0]
+18/18: $1\X_[1:0]
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+1/3: $0\Acalc[11:0]
+2/3: $0\Ycalc[11:0]
+3/3: $0\Xcalc[11:0]
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5'.
+1/1: $1\atan[11:0]
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+1/18: $0\Ain0[1:0]
+2/18: $0\Ain1[1:0]
+3/18: $0\Ain2[1:0]
+4/18: $0\Ain3[1:0]
+5/18: $0\Ain4[1:0]
+6/18: $0\Ain5[1:0]
+7/18: $0\Yin0[1:0]
+8/18: $0\Yin1[1:0]
+9/18: $0\Yin2[1:0]
+10/18: $0\Yin3[1:0]
+11/18: $0\Yin4[1:0]
+12/18: $0\Yin5[1:0]
+13/18: $0\Xin0[1:0]
+14/18: $0\Xin1[1:0]
+15/18: $0\Xin2[1:0]
+16/18: $0\Xin3[1:0]
+17/18: $0\Xin4[1:0]
+18/18: $0\Xin5[1:0]
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:42$3'.
+1/1: $0\ISout[0:0]
+Creating decoders for process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:33$2'.
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\cordic_element.\atan7' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:27$32'.
+No latch inferred for signal `\cordic_element.\atan6' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:26$31'.
+No latch inferred for signal `\cordic_element.\atan5' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:25$30'.
+No latch inferred for signal `\cordic_element.\atan4' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:24$29'.
+No latch inferred for signal `\cordic_element.\atan3' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:23$28'.
+No latch inferred for signal `\cordic_element.\atan2' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:22$27'.
+No latch inferred for signal `\cordic_element.\atan1' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:21$26'.
+No latch inferred for signal `\cordic_element.\atan0' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:20$25'.
+No latch inferred for signal `\cordic_element.\oneOverK' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:19$24'.
+No latch inferred for signal `\cordic_element.\X_' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+No latch inferred for signal `\cordic_element.\Y_' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+No latch inferred for signal `\cordic_element.\A_' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+No latch inferred for signal `\cordic_element.\atan' from process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5'.
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\cordic_element.\Xcalc' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+created $dff cell `$procdff$451' with positive edge clock.
+Creating register for signal `\cordic_element.\Ycalc' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+created $dff cell `$procdff$452' with positive edge clock.
+Creating register for signal `\cordic_element.\Acalc' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+created $dff cell `$procdff$453' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin5' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$454' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin4' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$455' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin3' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$456' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin2' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$457' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin1' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$458' with positive edge clock.
+Creating register for signal `\cordic_element.\Xin0' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$459' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin5' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$460' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin4' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$461' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin3' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$462' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin2' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$463' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin1' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$464' with positive edge clock.
+Creating register for signal `\cordic_element.\Yin0' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$465' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain5' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$466' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain4' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$467' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain3' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$468' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain2' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$469' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain1' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$470' with positive edge clock.
+Creating register for signal `\cordic_element.\Ain0' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+created $dff cell `$procdff$471' with positive edge clock.
+Creating register for signal `\cordic_element.\ISout' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:42$3'.
+created $dff cell `$procdff$472' with positive edge clock.
+Creating register for signal `\cordic_element.\i' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:33$2'.
+created $dff cell `$procdff$473' with positive edge clock.
+Creating register for signal `\cordic_element.\LoadCtl' using process `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:33$2'.
+created $dff cell `$procdff$474' with positive edge clock.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:27$32'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:26$31'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:25$30'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:24$29'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:23$28'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:22$27'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:21$26'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:20$25'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:19$24'.
+Found and cleaned up 6 empty switches in `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:113$23'.
+Found and cleaned up 4 empty switches in `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:82$6'.
+Found and cleaned up 1 empty switch in `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:62$5'.
+Found and cleaned up 6 empty switches in `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:49$4'.
+Found and cleaned up 1 empty switch in `\cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:42$3'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:42$3'.
+Removing empty process `cordic_element.$proc$/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/source/cordic_element.v:33$2'.
+Cleaned up 18 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+<suppressed ~10 debug messages>
+
+3.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+
+3.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic_element..
+Removed 3 unused cells and 202 unused wires.
+<suppressed ~5 debug messages>
+
+3.5. Executing CHECK pass (checking for obvious problems).
+Checking module cordic_element...
+Found and reported 0 problems.
+
+3.6. Executing OPT pass (performing simple optimizations).
+
+3.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic_element.
+
+3.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic_element'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+3.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic_element..
+Creating internal representation of mux trees.
+Evaluating internal representation of mux trees.
+Analyzing evaluation results.
+dead port 1/2 on $mux $procmux$100.
+dead port 1/2 on $mux $procmux$106.
+dead port 1/2 on $mux $procmux$109.
+dead port 1/2 on $mux $procmux$112.
+dead port 1/2 on $mux $procmux$115.
+dead port 1/2 on $mux $procmux$121.
+dead port 1/2 on $mux $procmux$124.
+dead port 1/2 on $mux $procmux$127.
+dead port 1/2 on $mux $procmux$130.
+dead port 1/2 on $mux $procmux$136.
+dead port 1/2 on $mux $procmux$139.
+dead port 1/2 on $mux $procmux$142.
+dead port 1/2 on $mux $procmux$148.
+dead port 1/2 on $mux $procmux$151.
+dead port 1/2 on $mux $procmux$154.
+dead port 1/2 on $mux $procmux$160.
+dead port 1/2 on $mux $procmux$163.
+dead port 1/2 on $mux $procmux$166.
+dead port 1/2 on $mux $procmux$172.
+dead port 1/2 on $mux $procmux$175.
+dead port 1/2 on $mux $procmux$181.
+dead port 1/2 on $mux $procmux$184.
+dead port 1/2 on $mux $procmux$190.
+dead port 1/2 on $mux $procmux$193.
+dead port 1/2 on $mux $procmux$199.
+dead port 1/2 on $mux $procmux$205.
+dead port 1/2 on $mux $procmux$211.
+dead port 1/2 on $mux $procmux$37.
+dead port 1/2 on $mux $procmux$40.
+dead port 1/2 on $mux $procmux$43.
+dead port 1/2 on $mux $procmux$46.
+dead port 1/2 on $mux $procmux$49.
+dead port 1/2 on $mux $procmux$55.
+dead port 1/2 on $mux $procmux$58.
+dead port 1/2 on $mux $procmux$61.
+dead port 1/2 on $mux $procmux$64.
+dead port 1/2 on $mux $procmux$67.
+dead port 1/2 on $mux $procmux$73.
+dead port 1/2 on $mux $procmux$76.
+dead port 1/2 on $mux $procmux$79.
+dead port 1/2 on $mux $procmux$82.
+dead port 1/2 on $mux $procmux$85.
+dead port 1/2 on $mux $procmux$91.
+dead port 1/2 on $mux $procmux$94.
+dead port 1/2 on $mux $procmux$97.
+Removed 45 multiplexer ports.
+<suppressed ~26 debug messages>
+
+3.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Optimizing cells in module \cordic_element.
+Performed a total of 0 changes.
+
+
+LEF Read, Line 113: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 114: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 118: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 119: NOTE:  Old format VIARULE ignored.
+
+LEF Read, Line 130: NOTE:  Old format VIARULE ignored.
+Technology set to etri050 from existing qflow_vars.sh file
+LEF Read, Line 131: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project cordic_element
+LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.88.T
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3266 lines.
+LEF Read: encountered 0 errors and 8 warnings total.
+Running vlog2Cel to generate input files for graywolf
+vlog2Cel  -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef -u 100 -o /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/layout/cordic_element.cel /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element.rtlnopwr.v
+No cordic_element.cel1 file found for project. . . no partial blockages to apply to layout.
+No cordic_element.cel2 file found for project. . . continuing without pin placement hints
+Running GrayWolf placement
+graywolf  cordic_element
+Running getantennacell to determine cell to use for antenna anchors.
+Unexpected input in LEF file:  Only macro defs were expected!
+getantennacell.tcl cordic_element  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef
+Running getfillcell to determine cell to use for fill.
+getfillcell.tcl cordic_element  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef FILL
+Using cell FILL for fill
+Running place2def to translate graywolf output to DEF format.
+place2def.tcl cordic_element FILL
+Running addspacers to generate power stripes and align cell right edge
+addspacers -stripe 8 225 PG -stripe 8.0 225.0 PG -p vdd -g gnd -f FILL -O -stripe 8.0 225.0 PG  -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef -o cordic_element_filled.def cordic_element
+Running arrangepins to adjust pin positions for optimal routing.
+
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project cordic_element
+
+Running vesta static timing analysis
+vesta --long cordic_element.rtlnopwr.v /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.4.100
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib read /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib:  Processed 6615 lines.
+Parsing module "cordic_element"
+Verilog netlist read:  Processed 7352 lines.
+Number of paths analyzed:  85
+
+Top 20 maximum delay paths:
+Path _1771_/CLK to _1741_/D delay 4933.15 ps
+0.0 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+430.9 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+715.2 ps        _262_:           _1028_/Y -> _1030_/B
+947.3 ps        _264_:           _1030_/Y -> _1034_/B
+1157.3 ps        _268_:           _1034_/Y -> _1035_/A
+1427.3 ps        _269_:           _1035_/Y -> _1065_/C
+1651.2 ps        _298_:           _1065_/Y -> _1101_/C
+1999.3 ps        _332_:           _1101_/Y -> _1123_/B
+2293.4 ps        _353_:           _1123_/Y -> _1124_/A
+2506.4 ps        _354_:           _1124_/Y -> _1134_/C
+2721.8 ps        _364_:           _1134_/Y -> _1136_/C
+2968.4 ps        _366_:           _1136_/Y -> _1154_/B
+3172.1 ps        _383_:           _1154_/Y -> _1158_/B
+3391.7 ps        _387_:           _1158_/Y -> _1184_/B
+3692.3 ps        _411_:           _1184_/Y -> _1240_/B
+3902.5 ps        _465_:           _1240_/Y -> _1241_/B
+4147.5 ps        _466_:           _1241_/Y -> _1257_/C
+4310.4 ps        _481_:           _1257_/Y -> _1258_/B
+4439.8 ps        _482_:           _1258_/Y -> _1259_/D
+4541.4 ps         _13_:           _1259_/Y -> _1741_/D
+
+clock skew at destination = 26.6886
+setup at destination = 365.103
+
+Path _1771_/CLK to _1739_/D delay 4853.9 ps
+0.0 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+430.9 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+715.2 ps        _262_:           _1028_/Y -> _1030_/B
+947.3 ps        _264_:           _1030_/Y -> _1034_/B
+1157.3 ps        _268_:           _1034_/Y -> _1035_/A
+1427.3 ps        _269_:           _1035_/Y -> _1065_/C
+1651.2 ps        _298_:           _1065_/Y -> _1101_/C
+1999.3 ps        _332_:           _1101_/Y -> _1123_/B
+2293.4 ps        _353_:           _1123_/Y -> _1124_/A
+2506.4 ps        _354_:           _1124_/Y -> _1134_/C
+2721.8 ps        _364_:           _1134_/Y -> _1136_/C
+2968.4 ps        _366_:           _1136_/Y -> _1154_/B
+3172.1 ps        _383_:           _1154_/Y -> _1158_/B
+3391.7 ps        _387_:           _1158_/Y -> _1184_/B
+3692.3 ps        _411_:           _1184_/Y -> _1203_/A
+3896.1 ps        _430_:           _1203_/Y -> _1204_/A
+4075.4 ps        _431_:           _1204_/Y -> _1221_/C
+4227.2 ps        _447_:           _1221_/Y -> _1222_/B
+4358.2 ps        _448_:           _1222_/Y -> _1223_/C
+4463.1 ps         _11_:           _1223_/Y -> _1739_/D
+
+clock skew at destination = 26.6886
+setup at destination = 364.12
+
+Path _1771_/CLK to _1740_/D delay 4852.29 ps
+0.0 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+430.9 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+715.2 ps        _262_:           _1028_/Y -> _1030_/B
+947.3 ps        _264_:           _1030_/Y -> _1034_/B
+1157.3 ps        _268_:           _1034_/Y -> _1035_/A
+1427.3 ps        _269_:           _1035_/Y -> _1065_/C
+1651.2 ps        _298_:           _1065_/Y -> _1101_/C
+1999.3 ps        _332_:           _1101_/Y -> _1123_/B
+2293.4 ps        _353_:           _1123_/Y -> _1124_/A
+2506.4 ps        _354_:           _1124_/Y -> _1134_/C
+2721.8 ps        _364_:           _1134_/Y -> _1136_/C
+2968.4 ps        _366_:           _1136_/Y -> _1154_/B
+3172.1 ps        _383_:           _1154_/Y -> _1158_/B
+3391.7 ps        _387_:           _1158_/Y -> _1184_/B
+3692.3 ps        _411_:           _1184_/Y -> _1240_/B
+3902.5 ps        _465_:           _1240_/Y -> _1241_/B
+4147.5 ps        _466_:           _1241_/Y -> _1245_/A
+4337.4 ps        _470_:           _1245_/Y -> _1246_/C
+4460.0 ps         _12_:           _1246_/Y -> _1740_/D
+
+clock skew at destination = 26.6886
+setup at destination = 365.604
+
+Path _1763_/CLK to _1805_/D delay 4740.89 ps
+0.0 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1763_/CLK
+435.7 ps      Xin1[1]:           _1763_/Q ->  _966_/A
+758.8 ps        _202_:            _966_/Y ->  _968_/B
+1007.7 ps        _204_:            _968_/Y -> _1516_/B
+1157.9 ps        _690_:           _1516_/Y -> _1518_/B
+1320.9 ps        _692_:           _1518_/Y -> _1522_/C
+1503.8 ps        _696_:           _1522_/Y -> _1563_/C
+1844.4 ps        _735_:           _1563_/Y -> _1570_/C
+2083.1 ps        _742_:           _1570_/Y -> _1575_/A
+2217.5 ps        _747_:           _1575_/Y -> _1577_/B
+2527.5 ps        _749_:           _1577_/Y -> _1578_/B
+2851.5 ps        _750_:           _1578_/Y -> _1584_/C
+3018.4 ps        _755_:           _1584_/Y -> _1618_/B
+3278.8 ps        _788_:           _1618_/Y -> _1655_/B
+3547.5 ps        _823_:           _1655_/Y -> _1669_/A
+3738.4 ps        _837_:           _1669_/Y -> _1674_/B
+3932.7 ps        _841_:           _1674_/Y -> _1688_/A
+4144.6 ps        _855_:           _1688_/Y -> _1690_/B
+4250.9 ps        _857_:           _1690_/Y -> _1691_/C
+4350.3 ps         _70_:           _1691_/Y -> _1805_/D
+
+clock skew at destination = 26.6886
+setup at destination = 363.9
+
+Path _1763_/CLK to _1807_/D delay 4737.35 ps
+0.0 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1763_/CLK
+435.7 ps      Xin1[1]:           _1763_/Q ->  _966_/A
+758.8 ps        _202_:            _966_/Y ->  _968_/B
+1007.7 ps        _204_:            _968_/Y -> _1516_/B
+1157.9 ps        _690_:           _1516_/Y -> _1518_/B
+1320.9 ps        _692_:           _1518_/Y -> _1522_/C
+1503.8 ps        _696_:           _1522_/Y -> _1563_/C
+1844.4 ps        _735_:           _1563_/Y -> _1570_/C
+2083.1 ps        _742_:           _1570_/Y -> _1575_/A
+2217.5 ps        _747_:           _1575_/Y -> _1577_/B
+2527.5 ps        _749_:           _1577_/Y -> _1578_/B
+2851.5 ps        _750_:           _1578_/Y -> _1584_/C
+3018.4 ps        _755_:           _1584_/Y -> _1618_/B
+3278.8 ps        _788_:           _1618_/Y -> _1655_/B
+3547.5 ps        _823_:           _1655_/Y -> _1705_/C
+3735.8 ps         _85_:           _1705_/Y -> _1706_/A
+3932.7 ps         _86_:           _1706_/Y -> _1723_/C
+4121.9 ps        _102_:           _1723_/Y -> _1726_/A
+4250.6 ps        _105_:           _1726_/Y -> _1727_/B
+4348.5 ps         _72_:           _1727_/Y -> _1807_/D
+
+clock skew at destination = 26.6886
+setup at destination = 362.196
+
+Path _1771_/CLK to _1738_/D delay 4720.7 ps
+0.0 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+430.9 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+715.2 ps        _262_:           _1028_/Y -> _1030_/B
+947.3 ps        _264_:           _1030_/Y -> _1034_/B
+1157.3 ps        _268_:           _1034_/Y -> _1035_/A
+1427.3 ps        _269_:           _1035_/Y -> _1065_/C
+1651.2 ps        _298_:           _1065_/Y -> _1101_/C
+1999.3 ps        _332_:           _1101_/Y -> _1123_/B
+2293.4 ps        _353_:           _1123_/Y -> _1124_/A
+2506.4 ps        _354_:           _1124_/Y -> _1134_/C
+2721.8 ps        _364_:           _1134_/Y -> _1136_/C
+2968.4 ps        _366_:           _1136_/Y -> _1154_/B
+3172.1 ps        _383_:           _1154_/Y -> _1158_/B
+3391.7 ps        _387_:           _1158_/Y -> _1184_/B
+3692.3 ps        _411_:           _1184_/Y -> _1203_/A
+3896.1 ps        _430_:           _1203_/Y -> _1204_/A
+4075.4 ps        _431_:           _1204_/Y -> _1205_/B
+4217.5 ps        _432_:           _1205_/Y -> _1206_/A
+4329.4 ps         _10_:           _1206_/Y -> _1738_/D
+
+clock skew at destination = 26.6886
+setup at destination = 364.654
+
+Path _1763_/CLK to _1806_/D delay 4711.63 ps
+0.0 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1763_/CLK
+435.7 ps      Xin1[1]:           _1763_/Q ->  _966_/A
+758.8 ps        _202_:            _966_/Y ->  _968_/B
+1007.7 ps        _204_:            _968_/Y -> _1516_/B
+1157.9 ps        _690_:           _1516_/Y -> _1518_/B
+1320.9 ps        _692_:           _1518_/Y -> _1522_/C
+1503.8 ps        _696_:           _1522_/Y -> _1563_/C
+1844.4 ps        _735_:           _1563_/Y -> _1570_/C
+2083.1 ps        _742_:           _1570_/Y -> _1575_/A
+2217.5 ps        _747_:           _1575_/Y -> _1577_/B
+2527.5 ps        _749_:           _1577_/Y -> _1578_/B
+
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project cordic_element
+Running qrouter 1.4.88.T
+qrouter -noc  -s cordic_element.cfg
+*** Running stage1 routing with defaults
+Nets remaining: 1000
+Nets remaining: 900
+Nets remaining: 800
+Nets remaining: 700
+Nets remaining: 600
+Nets remaining: 500
+Nets remaining: 400
+Nets remaining: 300
+Nets remaining: 200
+Progress: Stage 1 total routes completed: 2084
+Failed net routes: 140
+*** Running stage2 routing with options mask 10, effort 10
+Nets remaining: 100
+Nets remaining: 90
+Nets remaining: 80
+Nets remaining: 70
+Nets remaining: 70
+Nets remaining: 60
+Nets remaining: 50
+Nets remaining: 40
+Nets remaining: 40
+Nets remaining: 40
+Nets remaining: 40
+Nets remaining: 40
+Progress: Stage 2 total routes completed: 2896
+Failed net routes: 38
+*** Running stage2 routing with options mask 20, effort 10
+Nets remaining: 30
+Nets remaining: 20
+Nets remaining: 20
+Nets remaining: 20
+Nets remaining: 10
+Nets remaining: 10
+Nets remaining: 10
+Nets remaining: 10
+Nets remaining: 9
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 3
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 8
+Progress: Stage 2 total routes completed: 3361
+Failed net routes: 7
+*** Running stage2 routing with options mask 30, effort 10
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 9
+Nets remaining: 8
+Progress: Stage 2 total routes completed: 3499
+Failed net routes: 7
+*** Running stage2 routing with options mask 40, effort 10
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 10
+Nets remaining: 9
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 7
+Nets remaining: 7
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 6
+Progress: Stage 2 total routes completed: 3576
+Failed net routes: 6
+*** Running stage2 routing with options mask 50, effort 10
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 6
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 7
+Nets remaining: 7
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 6
+Progress: Stage 2 total routes completed: 3644
+Failed net routes: 5
+*** Running stage2 routing with options mask 60, effort 10
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 5
+Progress: Stage 2 total routes completed: 3734
+Failed net routes: 5
+*** Running stage2 routing with options mask 70, effort 10
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 6
+Nets remaining: 6
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 5
+Nets remaining: 5
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 2
+Progress: Stage 2 total routes completed: 3849
+Failed net routes: 2
+*** Running stage2 routing with options mask 80, effort 10
+Nets remaining: 2
+Nets remaining: 1
+Nets remaining: 4
+Nets remaining: 3
+Nets remaining: 3
+Nets remaining: 2
+Nets remaining: 1
+Nets remaining: 1
+Nets remaining: 1
+Nets remaining: 1
+Nets remaining: 1
+Progress: Stage 2 total routes completed: 3913
+No failed routes!
+*** Running stage3 routing with defaults, 1st round
+Nets remaining: 1000
+Nets remaining: 900
+Nets remaining: 800
+Nets remaining: 700
+Nets remaining: 600
+Nets remaining: 500
+Nets remaining: 400
+Nets remaining: 200
+Nets remaining: 100
+Nets remaining: 90
+Nets remaining: 80
+Nets remaining: 70
+Nets remaining: 60
+Nets remaining: 50
+Nets remaining: 40
+Nets remaining: 30
+Nets remaining: 20
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 4
+Nets remaining: 2
+Progress: Stage 3 total routes completed: 6039
+No failed routes!
+*** Running stage3 routing with defaults, 2nd round
+Nets remaining: 1000
+Nets remaining: 900
+Nets remaining: 800
+Nets remaining: 700
+Nets remaining: 600
+Nets remaining: 500
+Nets remaining: 400
+Nets remaining: 200
+Nets remaining: 100
+Nets remaining: 90
+Nets remaining: 80
+Nets remaining: 70
+Nets remaining: 60
+Nets remaining: 50
+Nets remaining: 40
+Nets remaining: 30
+Nets remaining: 20
+Nets remaining: 9
+Nets remaining: 8
+Nets remaining: 7
+Nets remaining: 6
+Nets remaining: 4
+Nets remaining: 2
+Progress: Stage 3 total routes completed: 8141
+No failed routes!
+*** Writing DEF file cordic_element_route.def
+Final: No failed routes!
+*** Writing RC file cordic_element_route.rc
+DEF2Verilog -v /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element.rtlnopwr.v -o /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element_postroute.v
+-p vdd -g gnd  -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef cordic_element_route.def
+Generating RTL verilog and SPICE netlist file in directory
+/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis
+Running vlog2Verilog.
+vlog2Verilog -c -v vdd -g gnd -o cordic_element.rtl.anno.v cordic_element_postroute.v
+vlog2Verilog -c -p -v vdd -g gnd -o cordic_element.rtlnopwr.anno.v cordic_element_postroute.v
+/usr/local/share/qflow/bin/vlog2Verilog -c -b -p -n -v vdd -g gnd -o cordic_element.rtlbb.anno.v cordic_element_postroute.v
+Running vlog2Spice.
+vlog2Spice -i -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.sp -o cordic_element.anno.spc cordic_element.rtl.anno.v
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project cordic_element
+Converting qrouter output to vesta delay format
+Running rc2dly -r cordic_element.rc -l /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib -V /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element.rtl.v
+-d cordic_element.dly
+Reading Liberty timing file /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib Read:  Processed 6615 lines.
+Number of Rs: 5449
+TBD: need to clean-up node deletion
+Converting qrouter output to SPEF delay format
+Running rc2dly -D : -r cordic_element.rc -l /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib -V /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element.rtl.v
+-d cordic_element.spef
+Reading Liberty timing file /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib Read:  Processed 6615 lines.
+Number of Rs: 5449
+TBD: need to clean-up node deletion
+Converting qrouter output to SDF delay format
+Running rc2dly -r cordic_element.rc -l /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib -V /home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_2_Cordic_Element/synthesis/cordic_element.rtl.v
+-d cordic_element.sdf
+Reading Liberty timing file /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib Read:  Processed 6615 lines.
+Number of Rs: 5449
+TBD: need to clean-up node deletion
+
+Running vesta static timing analysis with back-annotated extracted wire delays
+vesta -c -d cordic_element.dly --long cordic_element.rtlnopwr.v /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+
+----------------------------------------------
+Vesta static timing analysis tool
+for qflow 1.4.100
+(c) 2013-2018 Tim Edwards, Open Circuit Design
+----------------------------------------------
+
+Parsing library "etri05_stdcells"
+End of library at line 6613
+Lib read /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib:  Processed 6615 lines.
+Parsing module "cordic_element"
+Verilog netlist read:  Processed 7352 lines.
+Number of paths analyzed:  85
+
+Top 20 maximum delay paths:
+Path _1771_/CLK to _1741_/D delay 5065.69 ps
+0.3 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+433.0 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+729.7 ps        _262_:           _1028_/Y -> _1030_/B
+975.7 ps        _264_:           _1030_/Y -> _1034_/B
+1198.7 ps        _268_:           _1034_/Y -> _1035_/A
+1480.8 ps        _269_:           _1035_/Y -> _1065_/C
+1711.0 ps        _298_:           _1065_/Y -> _1101_/C
+2067.9 ps        _332_:           _1101_/Y -> _1123_/B
+2370.1 ps        _353_:           _1123_/Y -> _1124_/A
+2589.3 ps        _354_:           _1124_/Y -> _1134_/C
+2807.6 ps        _364_:           _1134_/Y -> _1136_/C
+3059.1 ps        _366_:           _1136_/Y -> _1154_/B
+3266.8 ps        _383_:           _1154_/Y -> _1158_/B
+3491.5 ps        _387_:           _1158_/Y -> _1184_/B
+3802.5 ps        _411_:           _1184_/Y -> _1240_/B
+4018.3 ps        _465_:           _1240_/Y -> _1241_/B
+4268.0 ps        _466_:           _1241_/Y -> _1257_/C
+4434.2 ps        _481_:           _1257_/Y -> _1258_/B
+4566.5 ps        _482_:           _1258_/Y -> _1259_/D
+4671.7 ps         _13_:           _1259_/Y -> _1741_/D
+
+clock skew at destination = 28.6945
+setup at destination = 365.33
+
+Path _1771_/CLK to _1739_/D delay 4985.36 ps
+0.3 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+433.0 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+729.7 ps        _262_:           _1028_/Y -> _1030_/B
+975.7 ps        _264_:           _1030_/Y -> _1034_/B
+1198.7 ps        _268_:           _1034_/Y -> _1035_/A
+1480.8 ps        _269_:           _1035_/Y -> _1065_/C
+1711.0 ps        _298_:           _1065_/Y -> _1101_/C
+2067.9 ps        _332_:           _1101_/Y -> _1123_/B
+2370.1 ps        _353_:           _1123_/Y -> _1124_/A
+2589.3 ps        _354_:           _1124_/Y -> _1134_/C
+2807.6 ps        _364_:           _1134_/Y -> _1136_/C
+3059.1 ps        _366_:           _1136_/Y -> _1154_/B
+3266.8 ps        _383_:           _1154_/Y -> _1158_/B
+3491.5 ps        _387_:           _1158_/Y -> _1184_/B
+3802.5 ps        _411_:           _1184_/Y -> _1203_/A
+4010.7 ps        _430_:           _1203_/Y -> _1204_/A
+4194.3 ps        _431_:           _1204_/Y -> _1221_/C
+4349.4 ps        _447_:           _1221_/Y -> _1222_/B
+4483.7 ps        _448_:           _1222_/Y -> _1223_/C
+4591.3 ps         _11_:           _1223_/Y -> _1739_/D
+
+clock skew at destination = 29.8343
+setup at destination = 364.209
+
+Path _1771_/CLK to _1740_/D delay 4977.03 ps
+0.3 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+433.0 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+729.7 ps        _262_:           _1028_/Y -> _1030_/B
+975.7 ps        _264_:           _1030_/Y -> _1034_/B
+1198.7 ps        _268_:           _1034_/Y -> _1035_/A
+1480.8 ps        _269_:           _1035_/Y -> _1065_/C
+1711.0 ps        _298_:           _1065_/Y -> _1101_/C
+2067.9 ps        _332_:           _1101_/Y -> _1123_/B
+2370.1 ps        _353_:           _1123_/Y -> _1124_/A
+2589.3 ps        _354_:           _1124_/Y -> _1134_/C
+2807.6 ps        _364_:           _1134_/Y -> _1136_/C
+3059.1 ps        _366_:           _1136_/Y -> _1154_/B
+3266.8 ps        _383_:           _1154_/Y -> _1158_/B
+3491.5 ps        _387_:           _1158_/Y -> _1184_/B
+3802.5 ps        _411_:           _1184_/Y -> _1240_/B
+4018.3 ps        _465_:           _1240_/Y -> _1241_/B
+4268.0 ps        _466_:           _1241_/Y -> _1245_/A
+4460.0 ps        _470_:           _1245_/Y -> _1246_/C
+4583.5 ps         _12_:           _1246_/Y -> _1740_/D
+
+clock skew at destination = 27.982
+setup at destination = 365.593
+
+Path _1761_/CLK to _1805_/D delay 4890.17 ps
+0.5 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1761_/CLK
+442.1 ps    Xin12b[5]:           _1761_/Q ->  _976_/A
+778.3 ps        _212_:            _976_/Y ->  _978_/B
+1036.4 ps        _214_:            _978_/Y -> _1519_/B
+1190.8 ps        _693_:           _1519_/Y -> _1521_/B
+1356.1 ps        _695_:           _1521_/Y -> _1522_/D
+1535.9 ps        _696_:           _1522_/Y -> _1563_/C
+1881.6 ps        _735_:           _1563_/Y -> _1570_/C
+2125.6 ps        _742_:           _1570_/Y -> _1575_/A
+2262.4 ps        _747_:           _1575_/Y -> _1577_/B
+2581.1 ps        _749_:           _1577_/Y -> _1578_/B
+2914.6 ps        _750_:           _1578_/Y -> _1584_/C
+3086.8 ps        _755_:           _1584_/Y -> _1618_/B
+3364.2 ps        _788_:           _1618_/Y -> _1655_/B
+3666.9 ps        _823_:           _1655_/Y -> _1669_/A
+3866.5 ps        _837_:           _1669_/Y -> _1674_/B
+4065.0 ps        _841_:           _1674_/Y -> _1688_/A
+4278.8 ps        _855_:           _1688_/Y -> _1690_/B
+4391.8 ps        _857_:           _1690_/Y -> _1691_/C
+4494.8 ps         _70_:           _1691_/Y -> _1805_/D
+
+clock skew at destination = 31.3644
+setup at destination = 363.957
+
+Path _1761_/CLK to _1807_/D delay 4886.83 ps
+0.5 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1761_/CLK
+442.1 ps    Xin12b[5]:           _1761_/Q ->  _976_/A
+778.3 ps        _212_:            _976_/Y ->  _978_/B
+1036.4 ps        _214_:            _978_/Y -> _1519_/B
+1190.8 ps        _693_:           _1519_/Y -> _1521_/B
+1356.1 ps        _695_:           _1521_/Y -> _1522_/D
+1535.9 ps        _696_:           _1522_/Y -> _1563_/C
+1881.6 ps        _735_:           _1563_/Y -> _1570_/C
+2125.6 ps        _742_:           _1570_/Y -> _1575_/A
+2262.4 ps        _747_:           _1575_/Y -> _1577_/B
+2581.1 ps        _749_:           _1577_/Y -> _1578_/B
+2914.6 ps        _750_:           _1578_/Y -> _1584_/C
+3086.8 ps        _755_:           _1584_/Y -> _1618_/B
+3364.2 ps        _788_:           _1618_/Y -> _1655_/B
+3666.5 ps        _823_:           _1655_/Y -> _1705_/C
+3867.1 ps         _85_:           _1705_/Y -> _1706_/A
+4067.2 ps         _86_:           _1706_/Y -> _1723_/C
+4258.4 ps        _102_:           _1723_/Y -> _1726_/A
+4391.6 ps        _105_:           _1726_/Y -> _1727_/B
+4493.0 ps         _72_:           _1727_/Y -> _1807_/D
+
+clock skew at destination = 31.6088
+setup at destination = 362.204
+
+Path _1761_/CLK to _1806_/D delay 4855.66 ps
+0.5 ps  clk_bF$buf4: CLKBUF1_insert15/Y -> _1761_/CLK
+442.1 ps    Xin12b[5]:           _1761_/Q ->  _976_/A
+778.3 ps        _212_:            _976_/Y ->  _978_/B
+1036.4 ps        _214_:            _978_/Y -> _1519_/B
+1190.8 ps        _693_:           _1519_/Y -> _1521_/B
+1356.1 ps        _695_:           _1521_/Y -> _1522_/D
+1535.9 ps        _696_:           _1522_/Y -> _1563_/C
+1881.6 ps        _735_:           _1563_/Y -> _1570_/C
+2125.6 ps        _742_:           _1570_/Y -> _1575_/A
+2262.4 ps        _747_:           _1575_/Y -> _1577_/B
+2581.1 ps        _749_:           _1577_/Y -> _1578_/B
+2914.6 ps        _750_:           _1578_/Y -> _1584_/C
+3086.8 ps        _755_:           _1584_/Y -> _1618_/B
+3364.2 ps        _788_:           _1618_/Y -> _1655_/B
+3666.5 ps        _823_:           _1655_/Y -> _1705_/C
+3867.1 ps         _85_:           _1705_/Y -> _1706_/A
+4067.2 ps         _86_:           _1706_/Y -> _1714_/B
+4354.0 ps         _94_:           _1714_/Y -> _1715_/C
+4459.5 ps         _71_:           _1715_/Y -> _1806_/D
+
+clock skew at destination = 31.6088
+setup at destination = 364.514
+
+Path _1771_/CLK to _1738_/D delay 4844.25 ps
+0.3 ps  clk_bF$buf5: CLKBUF1_insert14/Y -> _1771_/CLK
+433.0 ps    Yin12b[7]:           _1771_/Q -> _1028_/A
+729.7 ps        _262_:           _1028_/Y -> _1030_/B
+975.7 ps        _264_:           _1030_/Y -> _1034_/B
+1198.7 ps        _268_:           _1034_/Y -> _1035_/A
+1480.8 ps        _269_:           _1035_/Y -> _1065_/C
+1711.0 ps        _298_:           _1065_/Y -> _1101_/C
+2067.9 ps        _332_:           _1101_/Y -> _1123_/B
+2370.1 ps        _353_:           _1123_/Y -> _1124_/A
+2589.3 ps        _354_:           _1124_/Y -> _1134_/C
+2807.6 ps        _364_:           _1134_/Y -> _1136_/C
+
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project cordic_element
+Running magic 8.3.529
+magic -dnull -noconsole  migrate_cordic_element.tcl
+
+Magic 8.3 revision 529 - Compiled on Mon Jun 16 02:35:45 AM KST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.30(p): scaleFactor=30, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+The following types are not handled by extraction and will be treated as non-electrical types:
+n_field_implant p_field_implant nselect pselect glass filln filla fillb xp m1p m2p m3p comment bb
+2 Magic internal units = 1 Lambda
+Loading "migrate_cordic_element.tcl" from command line.
+Root cell box:
+width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)
+lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+internal:      0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef.
+This action cannot be undone.
+LEF read: Processed 3266 lines.
+Reading DEF data from file cordic_element.def.
+This action cannot be undone.
+DEF read, Line 13 (Error): END statement out of context.
+Processed 1041 subcell instances total.
+Processed 22 pins total.
+Processed 1024 nets total.
+Processed 2 special nets total.
+DEF read: Processed 12857 lines.
+DEF Read: encountered 1 error total.
+Generating LEF output cordic_element.lef for cell cordic_element:
+Diagnostic:  Write LEF header for cell cordic_element
+Diagnostic:  Writing LEF output for cell cordic_element
+Diagnostic:  Scale value is 0.150000
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Extracting NAND2X1 into NAND2X1.ext:
+Extracting INVX1 into INVX1.ext:
+Extracting NAND3X1 into NAND3X1.ext:
+Extracting AOI21X1 into AOI21X1.ext:
+Extracting OAI21X1 into OAI21X1.ext:
+Extracting BUFX2 into BUFX2.ext:
+Extracting MUX2X1 into MUX2X1.ext:
+Extracting NOR2X1 into NOR2X1.ext:
+Extracting FILL into FILL.ext:
+Extracting INVX2 into INVX2.ext:
+Extracting AOI22X1 into AOI22X1.ext:
+Extracting AND2X2 into AND2X2.ext:
+Extracting OR2X2 into OR2X2.ext:
+Extracting NOR3X1 into NOR3X1.ext:
+Extracting OAI22X1 into OAI22X1.ext:
+Extracting INVX8 into INVX8.ext:
+Extracting INVX4 into INVX4.ext:
+Extracting CLKBUF1 into CLKBUF1.ext:
+Extracting cordic_element into cordic_element.ext:
+Errors in synthesis flow, qflow status = 1

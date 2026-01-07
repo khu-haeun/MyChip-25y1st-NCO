@@ -1,0 +1,81 @@
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 1 > ./test_vec/1.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 2 > ./test_vec/2.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 4 > ./test_vec/4.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 8 > ./test_vec/8.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 16 > ./test_vec/16.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 32 > ./test_vec/32.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 64 > ./test_vec/64.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 128 > ./test_vec/128.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 256 > ./test_vec/256.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 512 > ./test_vec/512.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 1024 > ./test_vec/1024.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 2048 > ./test_vec/2048.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 4096 > ./test_vec/4096.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 8192 > ./test_vec/8192.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 16384 > ./test_vec/16384.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 32768 > ./test_vec/32768.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 65536 > ./test_vec/65536.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 131072 > ./test_vec/131072.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 262144 > ./test_vec/262144.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+make[1]: Entering directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+./TestBenchOfTimedNCO 524288 > ./test_vec/524288.txt
+make[1]: Leaving directory '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/0_Algorithm/sc_timed'
+FCW=1: Pass
+FCW=2: Pass
+FCW=4: Pass
+FCW=8: Pass
+FCW=16: Pass
+FCW=32: Pass
+FCW=64: Pass
+FCW=128: Pass
+FCW=256: Pass
+FCW=512: Pass
+FCW=1024: Pass
+FCW=2048: Pass
+FCW=4096: Pass
+FCW=8192: Pass
+FCW=16384: Pass
+FCW=32768: Pass
+FCW=65536: Pass
+FCW=131072: Pass
+FCW=262144: Pass
+FCW=524288: Pass
+All PASS :)

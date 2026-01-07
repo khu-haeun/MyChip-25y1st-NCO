@@ -1,0 +1,38 @@
+padgroup Input_Cin permute
+twpin_FCW[4]    nonfixed
+twpin_FCW[5]    nonfixed
+twpin_FCW[6]    nonfixed
+twpin_FCW[7]    nonfixed
+twpin_FCW[8]    nonfixed
+twpin_FCW[9]    nonfixed
+twpin_FCW[10]    nonfixed
+restrict side B
+
+padgroup Input_Xin permute
+twpin_clk	    nonfixed
+twpin_En    	nonfixed
+twpin_FCW[0]    nonfixed
+twpin_FCW[1]    nonfixed
+twpin_FCW[2]    nonfixed
+twpin_FCW[3]    nonfixed
+restrict side L
+
+padgroup Input_Yin permute
+twpin_FCW[11]    nonfixed
+twpin_FCW[12]    nonfixed
+twpin_FCW[13]    nonfixed
+twpin_FCW[14]    nonfixed
+twpin_FCW[15]    nonfixed
+twpin_FCW[16]    nonfixed
+twpin_FCW[17]    nonfixed
+restrict side R
+
+padgroup Output_XYout permute
+twpin_FCW[18]    nonfixed
+twpin_FCW[19]    nonfixed
+twpin_Aout[1]    nonfixed
+twpin_Aout[0]    nonfixed
+twpin_ISout    nonfixed
+twpin_Vld    nonfixed
+restrict side T
+

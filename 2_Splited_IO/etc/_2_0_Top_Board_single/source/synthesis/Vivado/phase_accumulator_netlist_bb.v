@@ -1,0 +1,1 @@
+../../../2_1_Phase_Acc/synthesis/Vivado/phase_accumulator_netlist_bb.v

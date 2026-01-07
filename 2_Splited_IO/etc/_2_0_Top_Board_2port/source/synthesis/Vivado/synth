@@ -1,0 +1,4 @@
+yosys -p "read_verilog -DEMULATION phase_accumulator_netlist_bb.v cordic_element_netlist_bb.v output_terminal_netlist_bb.v ./../../source/DDFS.v;
+          synth_xilinx -top DDFS -family xc7 -flatten;
+	  write_verilog DDFS_netlist.v"
+

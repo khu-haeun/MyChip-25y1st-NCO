@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "array": "cpp",
+        "cstdint": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "define.h": "c",
+        "calcfourier.h": "c",
+        "complex": "cpp",
+        "new": "cpp",
+        "freqresponse.h": "c",
+        "random": "cpp",
+        "atomic": "cpp"
+    }
+}

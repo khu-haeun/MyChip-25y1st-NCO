@@ -1,0 +1,43 @@
+chip: phase_accumulator
+5v
+chip 0 result: PASS / err=0
+chip 1 result: PASS / err=0
+chip 2 result: PASS / err=0
+chip 3 result: FAIL / err=1982
+chip 4 result: FAIL / err=1917
+chip 5 result: FAIL / err=652
+chip 6 result: FAIL / err=934
+chip 7 result: PASS / err=0
+chip 8 result: FAIL / err=21
+chip 9 result: PASS / err=0
+chip 10 result: FAIL / err=1830
+chip 11 result: PASS / err=0
+chip 12 result: FAIL / err=651
+chip 13 result: FAIL / err=1830
+chip 14 result: PASS / err=0
+chip 15 result: PASS / err=0
+chip 16 result: PASS / err=0
+chip 17 result: FAIL / err=821
+chip 18 result: PASS / err=0
+chip 19 result: PASS / err=0
+3.3v
+chip 0 result: PASS / err=0
+chip 1 result: PASS / err=0
+chip 2 result: PASS / err=0
+chip 3 result: FAIL / err=2055
+chip 4 result: FAIL / err=1917
+chip 5 result: FAIL / err=652
+chip 6 result: FAIL / err=934
+chip 7 result: PASS / err=0
+chip 8 result: FAIL / err=21
+chip 9 result: PASS / err=0
+chip 10 result: FAIL / err=1917
+chip 11 result: PASS / err=0
+chip 12 result: FAIL / err=651
+chip 13 result: FAIL / err=821
+chip 14 result: PASS / err=0
+chip 15 result: PASS / err=0
+chip 16 result: PASS / err=0
+chip 17 result: FAIL / err=821
+chip 18 result: PASS / err=0
+chip 19 result: PASS / err=0

@@ -1,0 +1,10 @@
+# do ./questa/compile_net.do
+# Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+# ** Error (suppressible): (vlog-1902) Option "-coverage" is not a valid option for this tool.
+# Use the -help option for complete vlog usage.
+# Errors: 1, Warnings: 0
+# ** Error: /opt/altera/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ././questa/compile_net.do line 10
+# /opt/altera/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -sv -reportprogress 300 -work work -coverage +cover=bcesft ~/ETRI050_DesignKit/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/source/netlist..."

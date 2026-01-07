@@ -1,0 +1,42 @@
+# Current time Thu Oct 16 23:06:57 2025
+# Program = voptk2
+# Id = "2024.3"
+# Version = "2024.09"
+# Date = "Sep 10 2024"
+# Platform = "linux_x86_64"
+# Signature = ed2c945679e55a07e8552f5e647069e5
+# --> START OF USERCODE
+# 0    0x00007ffff26daf57: 'sc_main + 0x0000000000000046' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 1    0x00007ffff2782887: 'sc_core::sc_spawn_object_v<sc_boost::_bi::bind_t<int, int (*)(int (*)(int, char**)), sc_boost::_bi::list1<sc_boost::_bi::value<int (*)(int, char**)> > > >::semantics() + 0x0000000000000017' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 2    0x00007ffff2774053: 'sc_core::sc_thread_cor_fn(void*) + 0x0000000000000093' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# End of Stack Trace
+
+
+# Current time Thu Oct 16 23:11:08 2025
+# Program = voptk2
+# Id = "2024.3"
+# Version = "2024.09"
+# Date = "Sep 10 2024"
+# Platform = "linux_x86_64"
+# Signature = ed2c945679e55a07e8552f5e647069e5
+# --> START OF USERCODE
+# 0    0x00007ffff26daf57: 'sc_main + 0x0000000000000046' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 1    0x00007ffff2782887: 'sc_core::sc_spawn_object_v<sc_boost::_bi::bind_t<int, int (*)(int (*)(int, char**)), sc_boost::_bi::list1<sc_boost::_bi::value<int (*)(int, char**)> > > >::semantics() + 0x0000000000000017' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 2    0x00007ffff2774053: 'sc_core::sc_thread_cor_fn(void*) + 0x0000000000000093' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# End of Stack Trace
+
+
+# Current time Thu Oct 16 23:12:55 2025
+# Program = voptk2
+# Id = "2024.3"
+# Version = "2024.09"
+# Date = "Sep 10 2024"
+# Platform = "linux_x86_64"
+# Signature = ed2c945679e55a07e8552f5e647069e5
+# --> START OF USERCODE
+# 0    0x00007ffff26daf57: 'sc_main + 0x0000000000000046' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 1    0x00007ffff2782887: 'sc_core::sc_spawn_object_v<sc_boost::_bi::bind_t<int, int (*)(int (*)(int, char**)), sc_boost::_bi::list1<sc_boost::_bi::value<int (*)(int, char**)> > > >::semantics() + 0x0000000000000017' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# 2    0x00007ffff2774053: 'sc_core::sc_thread_cor_fn(void*) + 0x0000000000000093' in '/home/haeun/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_NCO/verification/0_1_simulation_netlist/work/_sc/linux_x86_64_gcc-10.3.0/systemc.so'
+# End of Stack Trace
+
+

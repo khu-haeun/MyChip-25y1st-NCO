@@ -1,0 +1,314 @@
+
+Cell NOR2X1 (1) disconnected node: A
+Cell NOR2X1 (1) disconnected node: B
+Cell NOR2X1 (1) disconnected node: Y
+Cell NOR2X1 (1) disconnected node: vdd
+Cell NOR2X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: NOR2X1                          |Circuit 2: NOR2X1                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NOR2X1 and NOR2X1 are equivalent.
+
+Cell INVX1 (1) disconnected node: A
+Cell INVX1 (1) disconnected node: Y
+Cell INVX1 (1) disconnected node: vdd
+Cell INVX1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: INVX1                           |Circuit 2: INVX1                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INVX1 and INVX1 are equivalent.
+
+Cell NAND2X1 (1) disconnected node: A
+Cell NAND2X1 (1) disconnected node: B
+Cell NAND2X1 (1) disconnected node: Y
+Cell NAND2X1 (1) disconnected node: vdd
+Cell NAND2X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: NAND2X1                         |Circuit 2: NAND2X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2X1 and NAND2X1 are equivalent.
+
+Cell OAI21X1 (1) disconnected node: A
+Cell OAI21X1 (1) disconnected node: B
+Cell OAI21X1 (1) disconnected node: C
+Cell OAI21X1 (1) disconnected node: Y
+Cell OAI21X1 (1) disconnected node: vdd
+Cell OAI21X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: OAI21X1                         |Circuit 2: OAI21X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OAI21X1 and OAI21X1 are equivalent.
+
+Cell DFFPOSX1 (1) disconnected node: D
+Cell DFFPOSX1 (1) disconnected node: CLK
+Cell DFFPOSX1 (1) disconnected node: Q
+Cell DFFPOSX1 (1) disconnected node: vdd
+Cell DFFPOSX1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: DFFPOSX1                        |Circuit 2: DFFPOSX1                        
+-------------------------------------------|-------------------------------------------
+D                                          |D                                          
+CLK                                        |CLK                                        
+Q                                          |Q                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DFFPOSX1 and DFFPOSX1 are equivalent.
+
+Cell OR2X2 (1) disconnected node: A
+Cell OR2X2 (1) disconnected node: B
+Cell OR2X2 (1) disconnected node: Y
+Cell OR2X2 (1) disconnected node: vdd
+Cell OR2X2 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: OR2X2                           |Circuit 2: OR2X2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OR2X2 and OR2X2 are equivalent.
+
+Cell AOI21X1 (1) disconnected node: A
+Cell AOI21X1 (1) disconnected node: B
+Cell AOI21X1 (1) disconnected node: C
+Cell AOI21X1 (1) disconnected node: Y
+Cell AOI21X1 (1) disconnected node: vdd
+Cell AOI21X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: AOI21X1                         |Circuit 2: AOI21X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AOI21X1 and AOI21X1 are equivalent.
+
+Cell AND2X2 (1) disconnected node: A
+Cell AND2X2 (1) disconnected node: B
+Cell AND2X2 (1) disconnected node: Y
+Cell AND2X2 (1) disconnected node: vdd
+Cell AND2X2 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: AND2X2                          |Circuit 2: AND2X2                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AND2X2 and AND2X2 are equivalent.
+
+Cell NAND3X1 (1) disconnected node: A
+Cell NAND3X1 (1) disconnected node: B
+Cell NAND3X1 (1) disconnected node: C
+Cell NAND3X1 (1) disconnected node: Y
+Cell NAND3X1 (1) disconnected node: vdd
+Cell NAND3X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: NAND3X1                         |Circuit 2: NAND3X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND3X1 and NAND3X1 are equivalent.
+
+Cell BUFX2 (1) disconnected node: A
+Cell BUFX2 (1) disconnected node: Y
+Cell BUFX2 (1) disconnected node: vdd
+Cell BUFX2 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: BUFX2                           |Circuit 2: BUFX2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BUFX2 and BUFX2 are equivalent.
+
+Cell INVX2 (1) disconnected node: A
+Cell INVX2 (1) disconnected node: Y
+Cell INVX2 (1) disconnected node: vdd
+Cell INVX2 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: INVX2                           |Circuit 2: INVX2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INVX2 and INVX2 are equivalent.
+
+Cell INVX8 (1) disconnected node: A
+Cell INVX8 (1) disconnected node: Y
+Cell INVX8 (1) disconnected node: vdd
+Cell INVX8 (1) disconnected node: gnd
+Class INVX8 (0):  Merged 6 parallel devices.
+
+Subcircuit pins:
+Circuit 1: INVX8                           |Circuit 2: INVX8                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INVX8 and INVX8 are equivalent.
+
+Cell AOI22X1 (1) disconnected node: A
+Cell AOI22X1 (1) disconnected node: B
+Cell AOI22X1 (1) disconnected node: C
+Cell AOI22X1 (1) disconnected node: D
+Cell AOI22X1 (1) disconnected node: Y
+Cell AOI22X1 (1) disconnected node: vdd
+Cell AOI22X1 (1) disconnected node: gnd
+
+Subcircuit pins:
+Circuit 1: AOI22X1                         |Circuit 2: AOI22X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AOI22X1 and AOI22X1 are equivalent.
+
+Cell CLKBUF1 (1) disconnected node: A
+Cell CLKBUF1 (1) disconnected node: Y
+Cell CLKBUF1 (1) disconnected node: vdd
+Cell CLKBUF1 (1) disconnected node: gnd
+Class CLKBUF1 (0):  Merged 8 parallel devices.
+
+Subcircuit pins:
+Circuit 1: CLKBUF1                         |Circuit 2: CLKBUF1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CLKBUF1 and CLKBUF1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: phase_accumulator               |Circuit 2: phase_accumulator               
+-------------------------------------------|-------------------------------------------
+NOR2X1 (52)                                |NOR2X1 (52)                                
+INVX1 (38)                                 |INVX1 (38)                                 
+NAND2X1 (61)                               |NAND2X1 (61)                               
+OAI21X1 (66)                               |OAI21X1 (66)                               
+DFFPOSX1 (39)                              |DFFPOSX1 (39)                              
+OR2X2 (18)                                 |OR2X2 (18)                                 
+AOI21X1 (49)                               |AOI21X1 (49)                               
+AND2X2 (19)                                |AND2X2 (19)                                
+NAND3X1 (7)                                |NAND3X1 (7)                                
+BUFX2 (19)                                 |BUFX2 (19)                                 
+INVX2 (1)                                  |INVX2 (1)                                  
+INVX8 (1)                                  |INVX8 (1)                                  
+AOI22X1 (1)                                |AOI22X1 (1)                                
+CLKBUF1 (6)                                |CLKBUF1 (6)                                
+Number of devices: 377                     |Number of devices: 377                     
+Number of nets: 401                        |Number of nets: 401                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: phase_accumulator               |Circuit 2: phase_accumulator               
+-------------------------------------------|-------------------------------------------
+Vld                                        |Vld                                        
+ISout                                      |ISout                                      
+Aout[1]                                    |Aout[1]                                    
+Aout[0]                                    |Aout[0]                                    
+En                                         |En                                         
+clk                                        |clk                                        
+FCW[9]                                     |FCW[9]                                     
+FCW[10]                                    |FCW[10]                                    
+FCW[14]                                    |FCW[14]                                    
+FCW[13]                                    |FCW[13]                                    
+FCW[4]                                     |FCW[4]                                     
+FCW[2]                                     |FCW[2]                                     
+FCW[15]                                    |FCW[15]                                    
+FCW[18]                                    |FCW[18]                                    
+FCW[6]                                     |FCW[6]                                     
+FCW[19]                                    |FCW[19]                                    
+FCW[11]                                    |FCW[11]                                    
+FCW[3]                                     |FCW[3]                                     
+FCW[5]                                     |FCW[5]                                     
+FCW[1]                                     |FCW[1]                                     
+FCW[0]                                     |FCW[0]                                     
+FCW[12]                                    |FCW[12]                                    
+FCW[8]                                     |FCW[8]                                     
+FCW[17]                                    |FCW[17]                                    
+FCW[16]                                    |FCW[16]                                    
+FCW[7]                                     |FCW[7]                                     
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes phase_accumulator and phase_accumulator are equivalent.
+
+Final result: Circuits match uniquely.
+.

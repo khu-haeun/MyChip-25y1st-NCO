@@ -1,0 +1,862 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Feb 27 17:56:51 2025
+# Process ID: 82119
+# Current directory: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado
+# Command line: vivado
+# Log file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/vivado.log
+# Journal file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/vivado.jou
+# Running On        :HaEun
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD Ryzen 5 5625U with Radeon Graphics
+# CPU Frequency     :2295.622 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7968 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10115 MB
+# Available Virtual :8232 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at /opt/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+create_project DDFS . -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2024.1/data/ip'.
+set_property design_mode GateLvl [current_fileset]
+INFO: [Vivado 12-3498] Setting project source management mode (property SOURCE_MGMT_MODE) to "None".
+add_files -norecurse {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/phase_accumulator_netlist_bb.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/cordic_element_netlist_bb.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/output_terminal_netlist_bb.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/DDFS.v}
+import_files -force -norecurse
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+import_files -fileset constrs_1 -force -norecurse /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/FIR8/FIR8_PE/2_Splited_IO/emulation/Vivado/fir_pe.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc
+set_property top_file /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/phase_accumulator_netlist_bb.v [current_fileset]
+set_property top DDFS [current_fileset]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Feb 27 18:00:53 2025] Launched impl_1...
+Run output will be captured here: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8281.867 ; gain = 0.000 ; free physical = 4292 ; free virtual = 7544
+INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8345.680 ; gain = 0.000 ; free physical = 4232 ; free virtual = 7484
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6962
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Read PlaceDB: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Read Physdb Files: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Restored from archive | CPU: 0.070000 secs | Memory: 1.753822 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8921.074 ; gain = 0.000 ; free physical = 3710 ; free virtual = 6961
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 9135.590 ; gain = 1175.047 ; free physical = 3541 ; free virtual = 6801
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.1
+  **** Build date : May 22 2024 at 19:19:01
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.1.0
+  ****** Build date   : Apr 27 2024-10:40:49
+    **** Build number : 2024.1.1714182049
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319B9B156A
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+link_design -name netlist_1
+Command: link_design -name netlist_1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7a100tcsg324-1
+Removing all libraries
+analyzing package 'attributes'
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:106]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:111]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:116]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:121]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:126]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:131]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:136]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:141]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:146]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:151]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:156]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:161]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:166]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:171]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:176]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:181]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:186]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:191]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:196]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:201]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:206]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:211]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:216]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:221]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:226]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:231]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:236]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:241]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:246]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:251]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:256]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:261]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:266]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:271]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:276]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '32'b00000000000000000000000000000001' specified for property 'keep'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/DDFS.v:281]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2415]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2426]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2437]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2448]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2459]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2470]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2481]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2492]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2503]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2514]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2525]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2536]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2547]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2558]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2569]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2580]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2591]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2602]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2613]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2624]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2635]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2646]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2657]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2668]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2679]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2690]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2701]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2712]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2723]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2734]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2745]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2756]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2767]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2778]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2789]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2800]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2811]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2822]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2833]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2844]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2855]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2866]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2877]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2888]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2899]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2910]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2921]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2932]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2943]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2954]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2965]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2976]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2987]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:2998]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3009]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3020]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3031]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3042]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3053]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3064]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3075]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3086]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3097]
+Resolution: Please check the value of the property and set to a correct value.
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '1'bx' specified for property 'INIT'. Expecting type 'binary' with possible values of '1'b0,1'b1'. The system will either use the default value or the property value will be dropped. Please verify your source files. [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/sources_1/imports/synthesis/cordic_element_netlist_bb.v:3108]
+Resolution: Please check the value of the property and set to a correct value.
+INFO: [Common 17-14] Message 'Netlist 29-72' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 9135.590 ; gain = 0.000 ; free physical = 1754 ; free virtual = 5720
+INFO: [Netlist 29-17] Analyzing 315 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[0].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[0].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[1].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[1].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[2].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[2].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[3].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[3].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[4].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[4].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[5].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[5].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[6].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[6].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_377_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_378_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_381_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_383_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_384_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_385_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_386_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_388_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_389_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_392_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. genblk1[7].u_ce/_393_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, genblk1[7].u_ce/_396_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_193_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_194_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_196_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_197_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_198_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. u_ot/_199_ 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_ot/_200_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_ot/_201_, from the path connected to top-level port: selXY 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_191_, from the path connected to top-level port: En 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_192_, from the path connected to top-level port: FCW[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_193_, from the path connected to top-level port: FCW[1] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_194_, from the path connected to top-level port: FCW[10] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_195_, from the path connected to top-level port: FCW[11] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_196_, from the path connected to top-level port: FCW[12] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_197_, from the path connected to top-level port: FCW[13] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_198_, from the path connected to top-level port: FCW[14] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_199_, from the path connected to top-level port: FCW[15] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_200_, from the path connected to top-level port: FCW[16] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_201_, from the path connected to top-level port: FCW[17] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_202_, from the path connected to top-level port: FCW[18] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_203_, from the path connected to top-level port: FCW[19] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_204_, from the path connected to top-level port: FCW[2] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_205_, from the path connected to top-level port: FCW[3] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_206_, from the path connected to top-level port: FCW[4] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_207_, from the path connected to top-level port: FCW[5] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_208_, from the path connected to top-level port: FCW[6] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_209_, from the path connected to top-level port: FCW[7] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_210_, from the path connected to top-level port: FCW[8] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_211_, from the path connected to top-level port: FCW[9] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_pa/_214_, from the path connected to top-level port: clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[0].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[1].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[2].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[3].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[4].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[5].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[6].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_379_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_380_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_382_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_387_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_390_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_391_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_394_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. genblk1[7].u_ce/_395_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _06_, from the path connected to top-level port: Dout[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _07_, from the path connected to top-level port: Dout[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _08_, from the path connected to top-level port: Dout[10] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _09_, from the path connected to top-level port: Dout[11] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _10_, from the path connected to top-level port: Dout[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _11_, from the path connected to top-level port: Dout[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _12_, from the path connected to top-level port: Dout[4] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _13_, from the path connected to top-level port: Dout[5] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _14_, from the path connected to top-level port: Dout[6] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _15_, from the path connected to top-level port: Dout[7] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _16_, from the path connected to top-level port: Dout[8] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _17_, from the path connected to top-level port: Dout[9] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, _39_, from the path connected to top-level port: Vld 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. u_pa/_189_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. u_pa/_190_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. u_pa/_212_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. u_pa/_213_ 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+Parsing XDC File [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc]
+Finished Parsing XDC File [/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9172.992 ; gain = 0.000 ; free physical = 1703 ; free virtual = 5669
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 78 instances were transformed.
+  INV => LUT1: 78 instances
+
+6 Infos, 207 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 27 20:11:36 2025...

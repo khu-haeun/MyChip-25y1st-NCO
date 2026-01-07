@@ -1,0 +1,2 @@
+Usage: ./TestBenchOfTimedNCO FCW=<FCW value>
+ex   : ./TestBenchOfTimedNCO FCW=1024

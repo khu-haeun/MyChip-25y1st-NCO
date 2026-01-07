@@ -1,0 +1,17 @@
+chip 0 result: PASS / err=0
+chip 0 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 101 result: PASS / err=0
+chip 40 result: PASS / err=0
+chip 40 result: PASS / err=0
+chip 101 result: PASS / err=0
+chip 123 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 100 result: PASS / err=0
+chip 100 result: FAIL / err=25
+chip 100 result: FAIL / err=50
+chip 100 result: PASS / err=0
+chip 100 result: PASS / err=0

@@ -1,0 +1,2 @@
+../../../../../../../scripts/extract_spice.sh output_terminal_Fixed
+netgen -noc lvs "../synthesis/output_terminal.spc output_terminal" "output_terminal_Fixed.spice output_terminal_Fixed" ../../../../../../../tech/etri050_setup.tcl

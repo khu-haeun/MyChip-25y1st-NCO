@@ -1,0 +1,99 @@
+# SystemC::Coverage-3
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[0]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 630
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[1]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 629
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[2]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 588
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[3]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 588
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[4]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 588
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[5]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 630
+C 'f../../source/rtl/phase_accumulator.vl11n21ttogglepagev_toggle/phase_accumulatoroRdyCtl[6]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 630
+C 'f../../source/rtl/phase_accumulator.vl12n2tlinepagev_line/phase_accumulatoroblockS12hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2143
+C 'f../../source/rtl/phase_accumulator.vl13n3tbranchpagev_branch/phase_accumulatoroifS13hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 22
+C 'f../../source/rtl/phase_accumulator.vl13n4tbranchpagev_branch/phase_accumulatoroelseS14-16hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2121
+C 'f../../source/rtl/phase_accumulator.vl13n6texprpagev_expr/phase_accumulatoro(En==0) => 1hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 22
+C 'f../../source/rtl/phase_accumulator.vl13n6texprpagev_expr/phase_accumulatoro(En==1) => 0hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2121
+C 'f../../source/rtl/phase_accumulator.vl16n4tlinepagev_line/phase_accumulatoroblockS16-17hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 12726
+C 'f../../source/rtl/phase_accumulator.vl2n11ttogglepagev_toggle/phase_accumulatoroclkhu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 4285
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[0]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 16
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[10]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[11]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[12]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[13]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[14]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[15]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[16]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[17]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[18]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[19]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[1]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 24
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[2]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[3]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[4]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[5]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[6]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[7]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[8]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl23n13ttogglepagev_toggle/phase_accumulatoroacc_reg[9]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[0]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[10]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[11]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[1]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[2]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[3]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[4]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[5]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[6]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[7]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[8]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl24n13ttogglepagev_toggle/phase_accumulatoroAtmp[9]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 28
+C 'f../../source/rtl/phase_accumulator.vl26n2tlinepagev_line/phase_accumulatoroblockS26hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2143
+C 'f../../source/rtl/phase_accumulator.vl27n3tbranchpagev_branch/phase_accumulatoroifS27-29hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 22
+C 'f../../source/rtl/phase_accumulator.vl27n4tbranchpagev_branch/phase_accumulatoroelseS31hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2121
+C 'f../../source/rtl/phase_accumulator.vl27n7texprpagev_expr/phase_accumulatoro(En==0) => 1hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 22
+C 'f../../source/rtl/phase_accumulator.vl27n7texprpagev_expr/phase_accumulatoro(En==1) => 0hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2121
+C 'f../../source/rtl/phase_accumulator.vl3n10ttogglepagev_toggle/phase_accumulatoroEnhu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 41
+C 'f../../source/rtl/phase_accumulator.vl32n4tbranchpagev_branch/phase_accumulatoroifS32,34hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 315
+C 'f../../source/rtl/phase_accumulator.vl32n5tbranchpagev_branch/phase_accumulatoroelsehu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 1806
+C 'f../../source/rtl/phase_accumulator.vl37n5tlinepagev_line/phase_accumulatoroelsifS37-38hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 19
+C 'f../../source/rtl/phase_accumulator.vl39n10tlinepagev_line/phase_accumulatoroifS39-40hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 19
+C 'f../../source/rtl/phase_accumulator.vl39n11tlinepagev_line/phase_accumulatoroelseS42hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 277
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[0]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[10]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[11]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[12]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[13]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[14]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[15]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[16]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[17]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[18]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[19]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[1]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[2]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[3]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[4]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[5]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[6]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[7]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[8]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl4n17ttogglepagev_toggle/phase_accumulatoroFCW[9]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2
+C 'f../../source/rtl/phase_accumulator.vl48n2tlinepagev_line/phase_accumulatoroblockS48hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2143
+C 'f../../source/rtl/phase_accumulator.vl49n3tbranchpagev_branch/phase_accumulatoroifS49hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 316
+C 'f../../source/rtl/phase_accumulator.vl49n4tbranchpagev_branch/phase_accumulatoroelsehu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 1827
+C 'f../../source/rtl/phase_accumulator.vl5n12ttogglepagev_toggle/phase_accumulatoroVldhu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 630
+C 'f../../source/rtl/phase_accumulator.vl50n19texprpagev_expr/phase_accumulatoro(acc_reg[19]==0 && acc_reg[18]==0) => 0hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 269
+C 'f../../source/rtl/phase_accumulator.vl50n19texprpagev_expr/phase_accumulatoro(acc_reg[19]==0 && acc_reg[18]==1) => 1hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 19
+C 'f../../source/rtl/phase_accumulator.vl50n19texprpagev_expr/phase_accumulatoro(acc_reg[19]==1 && acc_reg[18]==0) => 1hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 19
+C 'f../../source/rtl/phase_accumulator.vl50n19texprpagev_expr/phase_accumulatoro(acc_reg[19]==1 && acc_reg[18]==1) => 0hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 9
+C 'f../../source/rtl/phase_accumulator.vl50n4tbranchpagev_branch/phase_accumulatoroifS50hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 38
+C 'f../../source/rtl/phase_accumulator.vl50n5tbranchpagev_branch/phase_accumulatoroelseS51hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 278
+C 'f../../source/rtl/phase_accumulator.vl56n2tlinepagev_line/phase_accumulatoroblockS56hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 2144
+C 'f../../source/rtl/phase_accumulator.vl57n3tlinepagev_line/phase_accumulatoroelsifS57hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 315
+C 'f../../source/rtl/phase_accumulator.vl58n8tlinepagev_line/phase_accumulatoroelsifS58hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 315
+C 'f../../source/rtl/phase_accumulator.vl59n8tlinepagev_line/phase_accumulatoroelsifS59hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 294
+C 'f../../source/rtl/phase_accumulator.vl6n20ttogglepagev_toggle/phase_accumulatoroAout[0]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 260
+C 'f../../source/rtl/phase_accumulator.vl6n20ttogglepagev_toggle/phase_accumulatoroAout[1]hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 256
+C 'f../../source/rtl/phase_accumulator.vl60n8tlinepagev_line/phase_accumulatoroelsifS60hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 294
+C 'f../../source/rtl/phase_accumulator.vl61n8tlinepagev_line/phase_accumulatoroelsifS61hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 294
+C 'f../../source/rtl/phase_accumulator.vl62n8tlinepagev_line/phase_accumulatoroifS62hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 316
+C 'f../../source/rtl/phase_accumulator.vl62n9tlinepagev_line/phase_accumulatoroelseS63hu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 316
+C 'f../../source/rtl/phase_accumulator.vl7n15ttogglepagev_toggle/phase_accumulatoroISouthu_sc_nco_tb.Verilated_sub1.vSub1.phase_accumulator' 30

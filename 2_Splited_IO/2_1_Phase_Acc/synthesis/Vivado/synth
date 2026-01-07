@@ -1,0 +1,3 @@
+yosys -p "read_verilog -DEMULATION ./../../source/phase_accumulator.v; 
+          synth_xilinx -top phase_accumulator -family xc7 -flatten;
+          write_verilog phase_accumulator_netlist.v"

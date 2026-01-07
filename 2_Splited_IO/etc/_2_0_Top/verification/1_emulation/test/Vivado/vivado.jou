@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Feb 28 06:52:40 2025
+# Process ID: 6933
+# Current directory: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado
+# Command line: vivado
+# Log file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/vivado.log
+# Journal file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/vivado.jou
+# Running On        :HaEun
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD Ryzen 5 5625U with Radeon Graphics
+# CPU Frequency     :2295.622 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7968 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10115 MB
+# Available Virtual :8448 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.xpr
+import_files -force -norecurse {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/phase_accumulator_netlist_bb.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/DDFS.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/cordic_element_netlist_bb.v /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/synthesis/output_terminal_netlist_bb.v}
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

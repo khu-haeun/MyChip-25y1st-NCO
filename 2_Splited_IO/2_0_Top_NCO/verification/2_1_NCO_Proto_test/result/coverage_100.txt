@@ -1,0 +1,2 @@
+Total coverage (140/143) 97.00%
+See lines with '%00' in ./logs/

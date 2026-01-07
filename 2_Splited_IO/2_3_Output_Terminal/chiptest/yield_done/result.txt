@@ -1,0 +1,43 @@
+chip: output terminal
+5v
+chip 0 result: PASS / err=0
+chip 1 result: PASS / err=0
+chip 2 result: FAIL / err=779
+chip 3 result: FAIL / err=2000
+chip 4 result: FAIL / err=2000
+chip 5 result: PASS / err=0
+chip 6 result: PASS / err=0
+chip 7 result: FAIL / err=2000
+chip 8 result: FAIL / err=1713
+chip 9 result: FAIL / err=2000
+chip 10 result: FAIL / err=1996
+chip 11 result: PASS / err=0
+chip 12 result: FAIL / err=1996
+chip 13 result: FAIL / err=2000
+chip 14 result: FAIL / err=1997
+chip 15 result: FAIL / err=765
+chip 16 result: PASS / err=0
+chip 17 result: PASS / err=0
+chip 18 result: PASS / err=0
+chip 19 result: PASS / err=0
+3.3v
+chip 0 result: PASS / err=0
+chip 1 result: PASS / err=0
+chip 2 result: FAIL / err=846
+chip 3 result: FAIL / err=2000
+chip 4 result: FAIL / err=2000
+chip 5 result: PASS / err=0
+chip 6 result: PASS / err=0
+chip 7 result: FAIL / err=2000
+chip 8 result: FAIL / err=1713
+chip 9 result: FAIL / err=1713
+chip 10 result: FAIL / err=1713
+chip 11 result: PASS / err=0
+chip 12 result: FAIL / err=1713
+chip 13 result: FAIL / err=1713
+chip 14 result: FAIL / err=1713
+chip 15 result: FAIL / err=789
+chip 16 result: PASS / err=0
+chip 17 result: PASS / err=0
+chip 18 result: PASS / err=0
+chip 19 result: PASS / err=0

@@ -1,0 +1,161 @@
+Starting new log file Fri Feb 28 07:35:01 2025
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project output_terminal
+Running yosys for verilog parsing and synthesis
+yosys  -s output_terminal.ys
+
+/----------------------------------------------------------------------------\
+|  yosys -- Yosys Open SYnthesis Suite                                       |
+|  Copyright (C) 2012 - 2025  Claire Xenia Wolf <claire@yosyshq.com>         |
+|  Distributed under an ISC-like license, type "license" to see terms        |
+\----------------------------------------------------------------------------/
+Yosys 0.50+0 (git sha1 6f9c515a2, clang++ 14.0.0-1ubuntu1.1 -fPIC -O3)
+
+-- Executing script file `output_terminal.ys' --
+
+1. Executing Liberty frontend: /usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Imported 39 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_3_Output_Terminal/source/output_terminal.v
+Parsing Verilog input from `/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_3_Output_Terminal/source/output_terminal.v' to AST representation.
+Generating RTLIL representation for module `\output_terminal'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \output_terminal
+
+
+
+LEF Read, Line 113: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 114: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 118: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 119: NOTE:  Old format VIARULE ignored.
+
+LEF Read, Line 130: NOTE:  Old format VIARULE ignored.
+Technology set to etri050 from existing qflow_vars.sh file
+LEF Read, Line 131: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project output_terminal
+LEF Read, Line 135: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.88.T
+LEF Read, Line 136: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef.
+LEF file:  Defines site corner (ignored)
+LEF file:  Defines site IO (ignored)
+LEF file:  Defines site core (ignored)
+LEF read: Processed 3266 lines.
+LEF Read: encountered 0 errors and 8 warnings total.
+Running vlog2Cel to generate input files for graywolf
+vlog2Cel  -l  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef -u 100 -o /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_3_Output_Terminal/layout/output_terminal.cel /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_3_Output_Terminal/synthesis/output_terminal.rtlnopwr.v
+No output_terminal.cel1 file found for project. . . no partial blockages to apply to layout.
+Running decongest to set initial density of 0.4
+decongest.tcl output_terminal  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef FILL,,, 0.4 --units=100 --lib=/usr/local/share/qflow/tech/etri050/etri05_stdcells.lib
+Reading FILL {} {} {} macros from LEF file.
+Unexpected input in LEF file:  Only macro defs were expected!
+Line is:   NOWIREEXTENSIONATPIN ON ;
+decongest.tcl:
+Fixed density planning, density = 0.4
+Number of cells = 363, total width = 612000
+Width of fill = 918000
+Width of decap = 0
+Width of antenna = 0
+Width of body ties = 0
+
+Done!
+Preparing pin placement hints from output_terminal.cel2
+Running GrayWolf placement
+graywolf  output_terminal
+Running getantennacell to determine cell to use for antenna anchors.
+Unexpected input in LEF file:  Only macro defs were expected!
+getantennacell.tcl output_terminal  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef
+Running getfillcell to determine cell to use for fill.
+getfillcell.tcl output_terminal  /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef FILL
+Using cell FILL for fill
+Running place2def to translate graywolf output to DEF format.
+place2def.tcl output_terminal FILL
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project output_terminal
+Running qrouter 1.4.88.T
+qrouter -noc  -s output_terminal.cfg
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to etri050 from existing qflow_vars.sh file
+Regenerating files for existing project output_terminal
+Running magic 8.3.518
+magic -dnull -noconsole  migrate_output_terminal.tcl
+
+Magic 8.3 revision 518 - Compiled on Tue Feb 11 21:58:00 KST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.30(p): scaleFactor=30, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+The following types are not handled by extraction and will be treated as non-electrical types:
+n_field_implant p_field_implant nselect pselect glass filln filla fillb xp m1p m2p m3p comment bb
+2 Magic internal units = 1 Lambda
+Loading "migrate_output_terminal.tcl" from command line.
+Root cell box:
+width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)
+lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+internal:      0 x 0       (     0,  0    ), (     0,  0    )
+Reading LEF data from file /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef.
+This action cannot be undone.
+LEF read: Processed 3266 lines.
+Reading DEF data from file output_terminal.def.
+This action cannot be undone.
+DEF read, Line 13 (Error): END statement out of context.
+Processed 3583 subcell instances total.
+Processed 23 pins total.
+Processed 371 nets total.
+Processed 2 special nets total.
+DEF read: Processed 7156 lines.
+DEF Read: encountered 1 error total.
+Generating LEF output output_terminal.lef for cell output_terminal:
+Diagnostic:  Write LEF header for cell output_terminal
+Diagnostic:  Writing LEF output for cell output_terminal
+Diagnostic:  Scale value is 0.150000
+Extracting FILL into FILL.ext:
+Extracting CLKBUF1 into CLKBUF1.ext:
+Extracting DFFPOSX1 into DFFPOSX1.ext:
+Extracting NAND2X1 into NAND2X1.ext:
+Extracting OAI21X1 into OAI21X1.ext:
+Extracting INVX1 into INVX1.ext:
+Extracting NOR2X1 into NOR2X1.ext:
+Extracting INVX2 into INVX2.ext:
+Extracting AND2X2 into AND2X2.ext:
+Extracting NAND3X1 into NAND3X1.ext:
+Extracting OR2X2 into OR2X2.ext:
+Extracting AOI21X1 into AOI21X1.ext:
+Extracting BUFX2 into BUFX2.ext:
+Extracting INVX4 into INVX4.ext:
+Extracting AOI22X1 into AOI22X1.ext:
+Extracting INVX8 into INVX8.ext:
+Extracting output_terminal into output_terminal.ext:
+Errors in synthesis flow, qflow status = 1

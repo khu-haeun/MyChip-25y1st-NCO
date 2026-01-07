@@ -1,0 +1,12 @@
+./UntimedNCO_TEST 3
+[12bit CORDIC Based NCO spec.]
+    phase bit        : 12 [bit]
+    phase resolution : 0.09 [degree/step]
+
+[Signed Mode]
+    Avg Err: (X, Y) = (0.33%, 0.27%)
+    Max Err: (X, Y) = (1.61%, 1.32%)
+
+[Unsigned Mode]
+    Avg Err: (X, Y) = (0.33%, 0.27%)
+    Max Err: (X, Y) = (1.61%, 1.32%)

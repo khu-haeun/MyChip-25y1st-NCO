@@ -1,0 +1,29 @@
+Qflow DRC logfile created on Thu Feb 27 21:36:19 KST 2025
+magic -dnull -noconsole  /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_1_Phase_Acc/layout/run_drc_phase_accumulator.tcl
+
+Magic 8.3 revision 518 - Compiled on Tue Feb 11 21:58:00 KST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.30(p): scaleFactor=30, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+The following types are not handled by extraction and will be treated as non-electrical types:
+    n_field_implant p_field_implant nselect pselect glass filln filla fillb xp m1p m2p m3p comment bb 
+2 Magic internal units = 1 Lambda
+Loading "/home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/DDFS/2_Splited_IO/2_1_Phase_Acc/layout/run_drc_phase_accumulator.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/etri050/etri050_stdcells.lef.
+This action cannot be undone.
+LEF read: Processed 3266 lines.
+Cell phase_accumulator read from current working directory
+Processing timestamp mismatches.
+Timestamp mismatches found in these cells: AOI22X1, INVX8, INVX2, OR2X2, OAI21X1, NAND2X1, AND2X2, NAND3X1, NOR2X1, INVX1, AOI21X1, DFFPOSX1, BUFX2, CLKBUF1, FILL.
+drc = 1
+DRC failure:  There are 1 DRC errors in the layout.
+Premature exit.
+Synthesis flow stopped due to error condition.

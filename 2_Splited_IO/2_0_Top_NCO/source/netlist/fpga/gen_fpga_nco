@@ -1,0 +1,4 @@
+yosys -p "read_verilog -DEMULATION phase_accumulator_netlist_bb.v cordic_element_netlist_bb.v output_terminal_netlist_bb.v ./../../rtl/nco.v;
+          synth_xilinx -top nco -family xc7 -flatten;
+	  write_verilog nco.v"
+

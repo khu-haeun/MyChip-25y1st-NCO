@@ -1,0 +1,1 @@
+../../../2_3_Output_Terminal/synthesis/Vivado/output_terminal_netlist_bb.v

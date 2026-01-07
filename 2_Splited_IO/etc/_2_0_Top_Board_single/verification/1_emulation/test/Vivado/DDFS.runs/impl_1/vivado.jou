@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Feb 28 06:54:54 2025
+# Process ID: 7366
+# Current directory: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1
+# Command line: vivado -log DDFS.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DDFS.tcl -notrace
+# Log file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/DDFS.vdi
+# Journal file: /home/ji/ETRI-0.5um-CMOS-MPW-Std-Cell-DK/design/MyChip/2025_1st/NCO/2_Splited_IO/2_0_Top_DDFS/emulation/0_Co_Emulation/Vivado/DDFS.runs/impl_1/vivado.jou
+# Running On        :HaEun
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :AMD Ryzen 5 5625U with Radeon Graphics
+# CPU Frequency     :2295.622 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7968 MB
+# Swap memory       :2147 MB
+# Total Virtual     :10115 MB
+# Available Virtual :7135 MB
+#-----------------------------------------------------------
+source DDFS.tcl -notrace

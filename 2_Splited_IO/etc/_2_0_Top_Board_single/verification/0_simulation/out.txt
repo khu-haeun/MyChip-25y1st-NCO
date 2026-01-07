@@ -1,0 +1,38 @@
+
+----------<case:0>-----------
+sampleNum: 256
+FCW: 4096
+TEST PASS :)
+errors: 0
+-----------------------------
+
+----------<case:1>-----------
+sampleNum: 256
+FCW: 4096
+TEST PASS :)
+errors: 0
+-----------------------------
+
+----------<case:2>-----------
+sampleNum: 256
+FCW: 4096
+TEST PASS :)
+errors: 0
+-----------------------------
+
+----------<case:3>-----------
+sampleNum: 256
+FCW: 4096
+TEST PASS :)
+errors: 0
+-----------------------------
+
+----------<Result>-----------
+SIGNED_Y : 1 
+SIGNED_X : 1 
+UNSIGN_Y : 1 
+UNSIGN_X : 1 
+-----------------------------
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+end

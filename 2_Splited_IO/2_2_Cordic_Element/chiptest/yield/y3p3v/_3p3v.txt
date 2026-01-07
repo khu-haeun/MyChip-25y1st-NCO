@@ -1,0 +1,2 @@
+Usage: ./obj_dir/Vcordic_element SNUM=<sample num> CNUM=<chip num>
+ex   : ./obj_dir/Vcordic_element SNUM=1024 CNUM=7
